@@ -1,0 +1,13 @@
+Region,Category,Sales,Profit,Units_Sold
+North,Electronics,120000,25000,450
+North,Furniture,80000,12000,300
+North,Clothing,60000,15000,700
+South,Electronics,95000,20000,380
+South,Furniture,70000,10000,280
+South,Clothing,50000,12000,650
+East,Electronics,110000,23000,420
+East,Furniture,65000,9000,260
+East,Clothing,55000,14000,600
+West,Electronics,105000,21000,400
+West,Furniture,72000,11000,290
+West,Clothing,58000,13000,620

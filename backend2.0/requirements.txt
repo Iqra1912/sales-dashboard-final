@@ -1,0 +1,5 @@
+flask
+pandas
+openai
+flask-cors
+flask-sqlalchemy

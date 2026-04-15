@@ -1,0 +1,615 @@
+Loan_ID,Name,Phone,Email,Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Loan_Amount_Term,Credit_History,Property_Area,Loan_Status
+LP001002,Person 001,9800000001,person001@example.com,Male,No,0,Graduate,No,5849,0,,360,1,Urban,Y
+LP001003,Person 002,9800000002,person002@example.com,Male,Yes,1,Graduate,No,4583,1508,128,360,1,Rural,N
+LP001005,Person 003,9800000003,person003@example.com,Male,Yes,0,Graduate,Yes,3000,0,66,360,1,Urban,Y
+LP001006,Person 004,9800000004,person004@example.com,Male,Yes,0,Not Graduate,No,2583,2358,120,360,1,Urban,Y
+LP001008,Person 005,9800000005,person005@example.com,Male,No,0,Graduate,No,6000,0,141,360,1,Urban,Y
+LP001011,Person 006,9800000006,person006@example.com,Male,Yes,2,Graduate,Yes,5417,4196,267,360,1,Urban,Y
+LP001013,Person 007,9800000007,person007@example.com,Male,Yes,0,Not Graduate,No,2333,1516,95,360,1,Urban,Y
+LP001014,Person 008,9800000008,person008@example.com,Male,Yes,3+,Graduate,No,3036,2504,158,360,0,Semiurban,N
+LP001018,Person 009,9800000009,person009@example.com,Male,Yes,2,Graduate,No,4006,1526,168,360,1,Urban,Y
+LP001020,Person 010,9800000010,person010@example.com,Male,Yes,1,Graduate,No,12841,10968,349,360,1,Semiurban,N
+LP001024,Person 011,9800000011,person011@example.com,Male,Yes,2,Graduate,No,3200,700,70,360,1,Urban,Y
+LP001027,Person 012,9800000012,person012@example.com,Male,Yes,2,Graduate,,2500,1840,109,360,1,Urban,Y
+LP001028,Person 013,9800000013,person013@example.com,Male,Yes,2,Graduate,No,3073,8106,200,360,1,Urban,Y
+LP001029,Person 014,9800000014,person014@example.com,Male,No,0,Graduate,No,1853,2840,114,360,1,Rural,N
+LP001030,Person 015,9800000015,person015@example.com,Male,Yes,2,Graduate,No,1299,1086,17,120,1,Urban,Y
+LP001032,Person 016,9800000016,person016@example.com,Male,No,0,Graduate,No,4950,0,125,360,1,Urban,Y
+LP001034,Person 017,9800000017,person017@example.com,Male,No,1,Not Graduate,No,3596,0,100,240,,Urban,Y
+LP001036,Person 018,9800000018,person018@example.com,Female,No,0,Graduate,No,3510,0,76,360,0,Urban,N
+LP001038,Person 019,9800000019,person019@example.com,Male,Yes,0,Not Graduate,No,4887,0,133,360,1,Rural,N
+LP001041,Person 020,9800000020,person020@example.com,Male,Yes,0,Graduate,,2600,3500,115,,1,Urban,Y
+LP001043,Person 021,9800000021,person021@example.com,Male,Yes,0,Not Graduate,No,7660,0,104,360,0,Urban,N
+LP001046,Person 022,9800000022,person022@example.com,Male,Yes,1,Graduate,No,5955,5625,315,360,1,Urban,Y
+LP001047,Person 023,9800000023,person023@example.com,Male,Yes,0,Not Graduate,No,2600,1911,116,360,0,Semiurban,N
+LP001050,Person 024,9800000024,person024@example.com,,Yes,2,Not Graduate,No,3365,1917,112,360,0,Rural,N
+LP001052,Person 025,9800000025,person025@example.com,Male,Yes,1,Graduate,,3717,2925,151,360,,Semiurban,N
+LP001066,Person 026,9800000026,person026@example.com,Male,Yes,0,Graduate,Yes,9560,0,191,360,1,Semiurban,Y
+LP001068,Person 027,9800000027,person027@example.com,Male,Yes,0,Graduate,No,2799,2253,122,360,1,Semiurban,Y
+LP001073,Person 028,9800000028,person028@example.com,Male,Yes,2,Not Graduate,No,4226,1040,110,360,1,Urban,Y
+LP001086,Person 029,9800000029,person029@example.com,Male,No,0,Not Graduate,No,1442,0,35,360,1,Urban,N
+LP001087,Person 030,9800000030,person030@example.com,Female,No,2,Graduate,,3750,2083,120,360,1,Semiurban,Y
+LP001091,Person 031,9800000031,person031@example.com,Male,Yes,1,Graduate,,4166,3369,201,360,,Urban,N
+LP001095,Person 032,9800000032,person032@example.com,Male,No,0,Graduate,No,3167,0,74,360,1,Urban,N
+LP001097,Person 033,9800000033,person033@example.com,Male,No,1,Graduate,Yes,4692,0,106,360,1,Rural,N
+LP001098,Person 034,9800000034,person034@example.com,Male,Yes,0,Graduate,No,3500,1667,114,360,1,Semiurban,Y
+LP001100,Person 035,9800000035,person035@example.com,Male,No,3+,Graduate,No,12500,3000,320,360,1,Rural,N
+LP001106,Person 036,9800000036,person036@example.com,Male,Yes,0,Graduate,No,2275,2067,,360,1,Urban,Y
+LP001109,Person 037,9800000037,person037@example.com,Male,Yes,0,Graduate,No,1828,1330,100,,0,Urban,N
+LP001112,Person 038,9800000038,person038@example.com,Female,Yes,0,Graduate,No,3667,1459,144,360,1,Semiurban,Y
+LP001114,Person 039,9800000039,person039@example.com,Male,No,0,Graduate,No,4166,7210,184,360,1,Urban,Y
+LP001116,Person 040,9800000040,person040@example.com,Male,No,0,Not Graduate,No,3748,1668,110,360,1,Semiurban,Y
+LP001119,Person 041,9800000041,person041@example.com,Male,No,0,Graduate,No,3600,0,80,360,1,Urban,N
+LP001120,Person 042,9800000042,person042@example.com,Male,No,0,Graduate,No,1800,1213,47,360,1,Urban,Y
+LP001123,Person 043,9800000043,person043@example.com,Male,Yes,0,Graduate,No,2400,0,75,360,,Urban,Y
+LP001131,Person 044,9800000044,person044@example.com,Male,Yes,0,Graduate,No,3941,2336,134,360,1,Semiurban,Y
+LP001136,Person 045,9800000045,person045@example.com,Male,Yes,0,Not Graduate,Yes,4695,0,96,,1,Urban,Y
+LP001137,Person 046,9800000046,person046@example.com,Female,No,0,Graduate,No,3410,0,88,,1,Urban,Y
+LP001138,Person 047,9800000047,person047@example.com,Male,Yes,1,Graduate,No,5649,0,44,360,1,Urban,Y
+LP001144,Person 048,9800000048,person048@example.com,Male,Yes,0,Graduate,No,5821,0,144,360,1,Urban,Y
+LP001146,Person 049,9800000049,person049@example.com,Female,Yes,0,Graduate,No,2645,3440,120,360,0,Urban,N
+LP001151,Person 050,9800000050,person050@example.com,Female,No,0,Graduate,No,4000,2275,144,360,1,Semiurban,Y
+LP001155,Person 051,9800000051,person051@example.com,Female,Yes,0,Not Graduate,No,1928,1644,100,360,1,Semiurban,Y
+LP001157,Person 052,9800000052,person052@example.com,Female,No,0,Graduate,No,3086,0,120,360,1,Semiurban,Y
+LP001164,Person 053,9800000053,person053@example.com,Female,No,0,Graduate,No,4230,0,112,360,1,Semiurban,N
+LP001179,Person 054,9800000054,person054@example.com,Male,Yes,2,Graduate,No,4616,0,134,360,1,Urban,N
+LP001186,Person 055,9800000055,person055@example.com,Female,Yes,1,Graduate,Yes,11500,0,286,360,0,Urban,N
+LP001194,Person 056,9800000056,person056@example.com,Male,Yes,2,Graduate,No,2708,1167,97,360,1,Semiurban,Y
+LP001195,Person 057,9800000057,person057@example.com,Male,Yes,0,Graduate,No,2132,1591,96,360,1,Semiurban,Y
+LP001197,Person 058,9800000058,person058@example.com,Male,Yes,0,Graduate,No,3366,2200,135,360,1,Rural,N
+LP001198,Person 059,9800000059,person059@example.com,Male,Yes,1,Graduate,No,8080,2250,180,360,1,Urban,Y
+LP001199,Person 060,9800000060,person060@example.com,Male,Yes,2,Not Graduate,No,3357,2859,144,360,1,Urban,Y
+LP001205,Person 061,9800000061,person061@example.com,Male,Yes,0,Graduate,No,2500,3796,120,360,1,Urban,Y
+LP001206,Person 062,9800000062,person062@example.com,Male,Yes,3+,Graduate,No,3029,0,99,360,1,Urban,Y
+LP001207,Person 063,9800000063,person063@example.com,Male,Yes,0,Not Graduate,Yes,2609,3449,165,180,0,Rural,N
+LP001213,Person 064,9800000064,person064@example.com,Male,Yes,1,Graduate,No,4945,0,,360,0,Rural,N
+LP001222,Person 065,9800000065,person065@example.com,Female,No,0,Graduate,No,4166,0,116,360,0,Semiurban,N
+LP001225,Person 066,9800000066,person066@example.com,Male,Yes,0,Graduate,No,5726,4595,258,360,1,Semiurban,N
+LP001228,Person 067,9800000067,person067@example.com,Male,No,0,Not Graduate,No,3200,2254,126,180,0,Urban,N
+LP001233,Person 068,9800000068,person068@example.com,Male,Yes,1,Graduate,No,10750,0,312,360,1,Urban,Y
+LP001238,Person 069,9800000069,person069@example.com,Male,Yes,3+,Not Graduate,Yes,7100,0,125,60,1,Urban,Y
+LP001241,Person 070,9800000070,person070@example.com,Female,No,0,Graduate,No,4300,0,136,360,0,Semiurban,N
+LP001243,Person 071,9800000071,person071@example.com,Male,Yes,0,Graduate,No,3208,3066,172,360,1,Urban,Y
+LP001245,Person 072,9800000072,person072@example.com,Male,Yes,2,Not Graduate,Yes,1875,1875,97,360,1,Semiurban,Y
+LP001248,Person 073,9800000073,person073@example.com,Male,No,0,Graduate,No,3500,0,81,300,1,Semiurban,Y
+LP001250,Person 074,9800000074,person074@example.com,Male,Yes,3+,Not Graduate,No,4755,0,95,,0,Semiurban,N
+LP001253,Person 075,9800000075,person075@example.com,Male,Yes,3+,Graduate,Yes,5266,1774,187,360,1,Semiurban,Y
+LP001255,Person 076,9800000076,person076@example.com,Male,No,0,Graduate,No,3750,0,113,480,1,Urban,N
+LP001256,Person 077,9800000077,person077@example.com,Male,No,0,Graduate,No,3750,4750,176,360,1,Urban,N
+LP001259,Person 078,9800000078,person078@example.com,Male,Yes,1,Graduate,Yes,1000,3022,110,360,1,Urban,N
+LP001263,Person 079,9800000079,person079@example.com,Male,Yes,3+,Graduate,No,3167,4000,180,300,0,Semiurban,N
+LP001264,Person 080,9800000080,person080@example.com,Male,Yes,3+,Not Graduate,Yes,3333,2166,130,360,,Semiurban,Y
+LP001265,Person 081,9800000081,person081@example.com,Female,No,0,Graduate,No,3846,0,111,360,1,Semiurban,Y
+LP001266,Person 082,9800000082,person082@example.com,Male,Yes,1,Graduate,Yes,2395,0,,360,1,Semiurban,Y
+LP001267,Person 083,9800000083,person083@example.com,Female,Yes,2,Graduate,No,1378,1881,167,360,1,Urban,N
+LP001273,Person 084,9800000084,person084@example.com,Male,Yes,0,Graduate,No,6000,2250,265,360,,Semiurban,N
+LP001275,Person 085,9800000085,person085@example.com,Male,Yes,1,Graduate,No,3988,0,50,240,1,Urban,Y
+LP001279,Person 086,9800000086,person086@example.com,Male,No,0,Graduate,No,2366,2531,136,360,1,Semiurban,Y
+LP001280,Person 087,9800000087,person087@example.com,Male,Yes,2,Not Graduate,No,3333,2000,99,360,,Semiurban,Y
+LP001282,Person 088,9800000088,person088@example.com,Male,Yes,0,Graduate,No,2500,2118,104,360,1,Semiurban,Y
+LP001289,Person 089,9800000089,person089@example.com,Male,No,0,Graduate,No,8566,0,210,360,1,Urban,Y
+LP001310,Person 090,9800000090,person090@example.com,Male,Yes,0,Graduate,No,5695,4167,175,360,1,Semiurban,Y
+LP001316,Person 091,9800000091,person091@example.com,Male,Yes,0,Graduate,No,2958,2900,131,360,1,Semiurban,Y
+LP001318,Person 092,9800000092,person092@example.com,Male,Yes,2,Graduate,No,6250,5654,188,180,1,Semiurban,Y
+LP001319,Person 093,9800000093,person093@example.com,Male,Yes,2,Not Graduate,No,3273,1820,81,360,1,Urban,Y
+LP001322,Person 094,9800000094,person094@example.com,Male,No,0,Graduate,No,4133,0,122,360,1,Semiurban,Y
+LP001325,Person 095,9800000095,person095@example.com,Male,No,0,Not Graduate,No,3620,0,25,120,1,Semiurban,Y
+LP001326,Person 096,9800000096,person096@example.com,Male,No,0,Graduate,,6782,0,,360,,Urban,N
+LP001327,Person 097,9800000097,person097@example.com,Female,Yes,0,Graduate,No,2484,2302,137,360,1,Semiurban,Y
+LP001333,Person 098,9800000098,person098@example.com,Male,Yes,0,Graduate,No,1977,997,50,360,1,Semiurban,Y
+LP001334,Person 099,9800000099,person099@example.com,Male,Yes,0,Not Graduate,No,4188,0,115,180,1,Semiurban,Y
+LP001343,Person 100,9800000100,person100@example.com,Male,Yes,0,Graduate,No,1759,3541,131,360,1,Semiurban,Y
+LP001345,Person 101,9800000101,person101@example.com,Male,Yes,2,Not Graduate,No,4288,3263,133,180,1,Urban,Y
+LP001349,Person 102,9800000102,person102@example.com,Male,No,0,Graduate,No,4843,3806,151,360,1,Semiurban,Y
+LP001350,Person 103,9800000103,person103@example.com,Male,Yes,,Graduate,No,13650,0,,360,1,Urban,Y
+LP001356,Person 104,9800000104,person104@example.com,Male,Yes,0,Graduate,No,4652,3583,,360,1,Semiurban,Y
+LP001357,Person 105,9800000105,person105@example.com,Male,,,Graduate,No,3816,754,160,360,1,Urban,Y
+LP001367,Person 106,9800000106,person106@example.com,Male,Yes,1,Graduate,No,3052,1030,100,360,1,Urban,Y
+LP001369,Person 107,9800000107,person107@example.com,Male,Yes,2,Graduate,No,11417,1126,225,360,1,Urban,Y
+LP001370,Person 108,9800000108,person108@example.com,Male,No,0,Not Graduate,,7333,0,120,360,1,Rural,N
+LP001379,Person 109,9800000109,person109@example.com,Male,Yes,2,Graduate,No,3800,3600,216,360,0,Urban,N
+LP001384,Person 110,9800000110,person110@example.com,Male,Yes,3+,Not Graduate,No,2071,754,94,480,1,Semiurban,Y
+LP001385,Person 111,9800000111,person111@example.com,Male,No,0,Graduate,No,5316,0,136,360,1,Urban,Y
+LP001387,Person 112,9800000112,person112@example.com,Female,Yes,0,Graduate,,2929,2333,139,360,1,Semiurban,Y
+LP001391,Person 113,9800000113,person113@example.com,Male,Yes,0,Not Graduate,No,3572,4114,152,,0,Rural,N
+LP001392,Person 114,9800000114,person114@example.com,Female,No,1,Graduate,Yes,7451,0,,360,1,Semiurban,Y
+LP001398,Person 115,9800000115,person115@example.com,Male,No,0,Graduate,,5050,0,118,360,1,Semiurban,Y
+LP001401,Person 116,9800000116,person116@example.com,Male,Yes,1,Graduate,No,14583,0,185,180,1,Rural,Y
+LP001404,Person 117,9800000117,person117@example.com,Female,Yes,0,Graduate,No,3167,2283,154,360,1,Semiurban,Y
+LP001405,Person 118,9800000118,person118@example.com,Male,Yes,1,Graduate,No,2214,1398,85,360,,Urban,Y
+LP001421,Person 119,9800000119,person119@example.com,Male,Yes,0,Graduate,No,5568,2142,175,360,1,Rural,N
+LP001422,Person 120,9800000120,person120@example.com,Female,No,0,Graduate,No,10408,0,259,360,1,Urban,Y
+LP001426,Person 121,9800000121,person121@example.com,Male,Yes,,Graduate,No,5667,2667,180,360,1,Rural,Y
+LP001430,Person 122,9800000122,person122@example.com,Female,No,0,Graduate,No,4166,0,44,360,1,Semiurban,Y
+LP001431,Person 123,9800000123,person123@example.com,Female,No,0,Graduate,No,2137,8980,137,360,0,Semiurban,Y
+LP001432,Person 124,9800000124,person124@example.com,Male,Yes,2,Graduate,No,2957,0,81,360,1,Semiurban,Y
+LP001439,Person 125,9800000125,person125@example.com,Male,Yes,0,Not Graduate,No,4300,2014,194,360,1,Rural,Y
+LP001443,Person 126,9800000126,person126@example.com,Female,No,0,Graduate,No,3692,0,93,360,,Rural,Y
+LP001448,Person 127,9800000127,person127@example.com,,Yes,3+,Graduate,No,23803,0,370,360,1,Rural,Y
+LP001449,Person 128,9800000128,person128@example.com,Male,No,0,Graduate,No,3865,1640,,360,1,Rural,Y
+LP001451,Person 129,9800000129,person129@example.com,Male,Yes,1,Graduate,Yes,10513,3850,160,180,0,Urban,N
+LP001465,Person 130,9800000130,person130@example.com,Male,Yes,0,Graduate,No,6080,2569,182,360,,Rural,N
+LP001469,Person 131,9800000131,person131@example.com,Male,No,0,Graduate,Yes,20166,0,650,480,,Urban,Y
+LP001473,Person 132,9800000132,person132@example.com,Male,No,0,Graduate,No,2014,1929,74,360,1,Urban,Y
+LP001478,Person 133,9800000133,person133@example.com,Male,No,0,Graduate,No,2718,0,70,360,1,Semiurban,Y
+LP001482,Person 134,9800000134,person134@example.com,Male,Yes,0,Graduate,Yes,3459,0,25,120,1,Semiurban,Y
+LP001487,Person 135,9800000135,person135@example.com,Male,No,0,Graduate,No,4895,0,102,360,1,Semiurban,Y
+LP001488,Person 136,9800000136,person136@example.com,Male,Yes,3+,Graduate,No,4000,7750,290,360,1,Semiurban,N
+LP001489,Person 137,9800000137,person137@example.com,Female,Yes,0,Graduate,No,4583,0,84,360,1,Rural,N
+LP001491,Person 138,9800000138,person138@example.com,Male,Yes,2,Graduate,Yes,3316,3500,88,360,1,Urban,Y
+LP001492,Person 139,9800000139,person139@example.com,Male,No,0,Graduate,No,14999,0,242,360,0,Semiurban,N
+LP001493,Person 140,9800000140,person140@example.com,Male,Yes,2,Not Graduate,No,4200,1430,129,360,1,Rural,N
+LP001497,Person 141,9800000141,person141@example.com,Male,Yes,2,Graduate,No,5042,2083,185,360,1,Rural,N
+LP001498,Person 142,9800000142,person142@example.com,Male,No,0,Graduate,No,5417,0,168,360,1,Urban,Y
+LP001504,Person 143,9800000143,person143@example.com,Male,No,0,Graduate,Yes,6950,0,175,180,1,Semiurban,Y
+LP001507,Person 144,9800000144,person144@example.com,Male,Yes,0,Graduate,No,2698,2034,122,360,1,Semiurban,Y
+LP001508,Person 145,9800000145,person145@example.com,Male,Yes,2,Graduate,No,11757,0,187,180,1,Urban,Y
+LP001514,Person 146,9800000146,person146@example.com,Female,Yes,0,Graduate,No,2330,4486,100,360,1,Semiurban,Y
+LP001516,Person 147,9800000147,person147@example.com,Female,Yes,2,Graduate,No,14866,0,70,360,1,Urban,Y
+LP001518,Person 148,9800000148,person148@example.com,Male,Yes,1,Graduate,No,1538,1425,30,360,1,Urban,Y
+LP001519,Person 149,9800000149,person149@example.com,Female,No,0,Graduate,No,10000,1666,225,360,1,Rural,N
+LP001520,Person 150,9800000150,person150@example.com,Male,Yes,0,Graduate,No,4860,830,125,360,1,Semiurban,Y
+LP001528,Person 151,9800000151,person151@example.com,Male,No,0,Graduate,No,6277,0,118,360,0,Rural,N
+LP001529,Person 152,9800000152,person152@example.com,Male,Yes,0,Graduate,Yes,2577,3750,152,360,1,Rural,Y
+LP001531,Person 153,9800000153,person153@example.com,Male,No,0,Graduate,No,9166,0,244,360,1,Urban,N
+LP001532,Person 154,9800000154,person154@example.com,Male,Yes,2,Not Graduate,No,2281,0,113,360,1,Rural,N
+LP001535,Person 155,9800000155,person155@example.com,Male,No,0,Graduate,No,3254,0,50,360,1,Urban,Y
+LP001536,Person 156,9800000156,person156@example.com,Male,Yes,3+,Graduate,No,39999,0,600,180,0,Semiurban,Y
+LP001541,Person 157,9800000157,person157@example.com,Male,Yes,1,Graduate,No,6000,0,160,360,,Rural,Y
+LP001543,Person 158,9800000158,person158@example.com,Male,Yes,1,Graduate,No,9538,0,187,360,1,Urban,Y
+LP001546,Person 159,9800000159,person159@example.com,Male,No,0,Graduate,,2980,2083,120,360,1,Rural,Y
+LP001552,Person 160,9800000160,person160@example.com,Male,Yes,0,Graduate,No,4583,5625,255,360,1,Semiurban,Y
+LP001560,Person 161,9800000161,person161@example.com,Male,Yes,0,Not Graduate,No,1863,1041,98,360,1,Semiurban,Y
+LP001562,Person 162,9800000162,person162@example.com,Male,Yes,0,Graduate,No,7933,0,275,360,1,Urban,N
+LP001565,Person 163,9800000163,person163@example.com,Male,Yes,1,Graduate,No,3089,1280,121,360,0,Semiurban,N
+LP001570,Person 164,9800000164,person164@example.com,Male,Yes,2,Graduate,No,4167,1447,158,360,1,Rural,Y
+LP001572,Person 165,9800000165,person165@example.com,Male,Yes,0,Graduate,No,9323,0,75,180,1,Urban,Y
+LP001574,Person 166,9800000166,person166@example.com,Male,Yes,0,Graduate,No,3707,3166,182,,1,Rural,Y
+LP001577,Person 167,9800000167,person167@example.com,Female,Yes,0,Graduate,No,4583,0,112,360,1,Rural,N
+LP001578,Person 168,9800000168,person168@example.com,Male,Yes,0,Graduate,No,2439,3333,129,360,1,Rural,Y
+LP001579,Person 169,9800000169,person169@example.com,Male,No,0,Graduate,No,2237,0,63,480,0,Semiurban,N
+LP001580,Person 170,9800000170,person170@example.com,Male,Yes,2,Graduate,No,8000,0,200,360,1,Semiurban,Y
+LP001581,Person 171,9800000171,person171@example.com,Male,Yes,0,Not Graduate,,1820,1769,95,360,1,Rural,Y
+LP001585,Person 172,9800000172,person172@example.com,,Yes,3+,Graduate,No,51763,0,700,300,1,Urban,Y
+LP001586,Person 173,9800000173,person173@example.com,Male,Yes,3+,Not Graduate,No,3522,0,81,180,1,Rural,N
+LP001594,Person 174,9800000174,person174@example.com,Male,Yes,0,Graduate,No,5708,5625,187,360,1,Semiurban,Y
+LP001603,Person 175,9800000175,person175@example.com,Male,Yes,0,Not Graduate,Yes,4344,736,87,360,1,Semiurban,N
+LP001606,Person 176,9800000176,person176@example.com,Male,Yes,0,Graduate,No,3497,1964,116,360,1,Rural,Y
+LP001608,Person 177,9800000177,person177@example.com,Male,Yes,2,Graduate,No,2045,1619,101,360,1,Rural,Y
+LP001610,Person 178,9800000178,person178@example.com,Male,Yes,3+,Graduate,No,5516,11300,495,360,0,Semiurban,N
+LP001616,Person 179,9800000179,person179@example.com,Male,Yes,1,Graduate,No,3750,0,116,360,1,Semiurban,Y
+LP001630,Person 180,9800000180,person180@example.com,Male,No,0,Not Graduate,No,2333,1451,102,480,0,Urban,N
+LP001633,Person 181,9800000181,person181@example.com,Male,Yes,1,Graduate,No,6400,7250,180,360,0,Urban,N
+LP001634,Person 182,9800000182,person182@example.com,Male,No,0,Graduate,No,1916,5063,67,360,,Rural,N
+LP001636,Person 183,9800000183,person183@example.com,Male,Yes,0,Graduate,No,4600,0,73,180,1,Semiurban,Y
+LP001637,Person 184,9800000184,person184@example.com,Male,Yes,1,Graduate,No,33846,0,260,360,1,Semiurban,N
+LP001639,Person 185,9800000185,person185@example.com,Female,Yes,0,Graduate,No,3625,0,108,360,1,Semiurban,Y
+LP001640,Person 186,9800000186,person186@example.com,Male,Yes,0,Graduate,Yes,39147,4750,120,360,1,Semiurban,Y
+LP001641,Person 187,9800000187,person187@example.com,Male,Yes,1,Graduate,Yes,2178,0,66,300,0,Rural,N
+LP001643,Person 188,9800000188,person188@example.com,Male,Yes,0,Graduate,No,2383,2138,58,360,,Rural,Y
+LP001644,Person 189,9800000189,person189@example.com,,Yes,0,Graduate,Yes,674,5296,168,360,1,Rural,Y
+LP001647,Person 190,9800000190,person190@example.com,Male,Yes,0,Graduate,No,9328,0,188,180,1,Rural,Y
+LP001653,Person 191,9800000191,person191@example.com,Male,No,0,Not Graduate,No,4885,0,48,360,1,Rural,Y
+LP001656,Person 192,9800000192,person192@example.com,Male,No,0,Graduate,No,12000,0,164,360,1,Semiurban,N
+LP001657,Person 193,9800000193,person193@example.com,Male,Yes,0,Not Graduate,No,6033,0,160,360,1,Urban,N
+LP001658,Person 194,9800000194,person194@example.com,Male,No,0,Graduate,No,3858,0,76,360,1,Semiurban,Y
+LP001664,Person 195,9800000195,person195@example.com,Male,No,0,Graduate,No,4191,0,120,360,1,Rural,Y
+LP001665,Person 196,9800000196,person196@example.com,Male,Yes,1,Graduate,No,3125,2583,170,360,1,Semiurban,N
+LP001666,Person 197,9800000197,person197@example.com,Male,No,0,Graduate,No,8333,3750,187,360,1,Rural,Y
+LP001669,Person 198,9800000198,person198@example.com,Female,No,0,Not Graduate,No,1907,2365,120,,1,Urban,Y
+LP001671,Person 199,9800000199,person199@example.com,Female,Yes,0,Graduate,No,3416,2816,113,360,,Semiurban,Y
+LP001673,Person 200,9800000200,person200@example.com,Male,No,0,Graduate,Yes,11000,0,83,360,1,Urban,N
+LP001674,Person 201,9800000201,person201@example.com,Male,Yes,1,Not Graduate,No,2600,2500,90,360,1,Semiurban,Y
+LP001677,Person 202,9800000202,person202@example.com,Male,No,2,Graduate,No,4923,0,166,360,0,Semiurban,Y
+LP001682,Person 203,9800000203,person203@example.com,Male,Yes,3+,Not Graduate,No,3992,0,,180,1,Urban,N
+LP001688,Person 204,9800000204,person204@example.com,Male,Yes,1,Not Graduate,No,3500,1083,135,360,1,Urban,Y
+LP001691,Person 205,9800000205,person205@example.com,Male,Yes,2,Not Graduate,No,3917,0,124,360,1,Semiurban,Y
+LP001692,Person 206,9800000206,person206@example.com,Female,No,0,Not Graduate,No,4408,0,120,360,1,Semiurban,Y
+LP001693,Person 207,9800000207,person207@example.com,Female,No,0,Graduate,No,3244,0,80,360,1,Urban,Y
+LP001698,Person 208,9800000208,person208@example.com,Male,No,0,Not Graduate,No,3975,2531,55,360,1,Rural,Y
+LP001699,Person 209,9800000209,person209@example.com,Male,No,0,Graduate,No,2479,0,59,360,1,Urban,Y
+LP001702,Person 210,9800000210,person210@example.com,Male,No,0,Graduate,No,3418,0,127,360,1,Semiurban,N
+LP001708,Person 211,9800000211,person211@example.com,Female,No,0,Graduate,No,10000,0,214,360,1,Semiurban,N
+LP001711,Person 212,9800000212,person212@example.com,Male,Yes,3+,Graduate,No,3430,1250,128,360,0,Semiurban,N
+LP001713,Person 213,9800000213,person213@example.com,Male,Yes,1,Graduate,Yes,7787,0,240,360,1,Urban,Y
+LP001715,Person 214,9800000214,person214@example.com,Male,Yes,3+,Not Graduate,Yes,5703,0,130,360,1,Rural,Y
+LP001716,Person 215,9800000215,person215@example.com,Male,Yes,0,Graduate,No,3173,3021,137,360,1,Urban,Y
+LP001720,Person 216,9800000216,person216@example.com,Male,Yes,3+,Not Graduate,No,3850,983,100,360,1,Semiurban,Y
+LP001722,Person 217,9800000217,person217@example.com,Male,Yes,0,Graduate,No,150,1800,135,360,1,Rural,N
+LP001726,Person 218,9800000218,person218@example.com,Male,Yes,0,Graduate,No,3727,1775,131,360,1,Semiurban,Y
+LP001732,Person 219,9800000219,person219@example.com,Male,Yes,2,Graduate,,5000,0,72,360,0,Semiurban,N
+LP001734,Person 220,9800000220,person220@example.com,Female,Yes,2,Graduate,No,4283,2383,127,360,,Semiurban,Y
+LP001736,Person 221,9800000221,person221@example.com,Male,Yes,0,Graduate,No,2221,0,60,360,0,Urban,N
+LP001743,Person 222,9800000222,person222@example.com,Male,Yes,2,Graduate,No,4009,1717,116,360,1,Semiurban,Y
+LP001744,Person 223,9800000223,person223@example.com,Male,No,0,Graduate,No,2971,2791,144,360,1,Semiurban,Y
+LP001749,Person 224,9800000224,person224@example.com,Male,Yes,0,Graduate,No,7578,1010,175,,1,Semiurban,Y
+LP001750,Person 225,9800000225,person225@example.com,Male,Yes,0,Graduate,No,6250,0,128,360,1,Semiurban,Y
+LP001751,Person 226,9800000226,person226@example.com,Male,Yes,0,Graduate,No,3250,0,170,360,1,Rural,N
+LP001754,Person 227,9800000227,person227@example.com,Male,Yes,,Not Graduate,Yes,4735,0,138,360,1,Urban,N
+LP001758,Person 228,9800000228,person228@example.com,Male,Yes,2,Graduate,No,6250,1695,210,360,1,Semiurban,Y
+LP001760,Person 229,9800000229,person229@example.com,Male,,,Graduate,No,4758,0,158,480,1,Semiurban,Y
+LP001761,Person 230,9800000230,person230@example.com,Male,No,0,Graduate,Yes,6400,0,200,360,1,Rural,Y
+LP001765,Person 231,9800000231,person231@example.com,Male,Yes,1,Graduate,No,2491,2054,104,360,1,Semiurban,Y
+LP001768,Person 232,9800000232,person232@example.com,Male,Yes,0,Graduate,,3716,0,42,180,1,Rural,Y
+LP001770,Person 233,9800000233,person233@example.com,Male,No,0,Not Graduate,No,3189,2598,120,,1,Rural,Y
+LP001776,Person 234,9800000234,person234@example.com,Female,No,0,Graduate,No,8333,0,280,360,1,Semiurban,Y
+LP001778,Person 235,9800000235,person235@example.com,Male,Yes,1,Graduate,No,3155,1779,140,360,1,Semiurban,Y
+LP001784,Person 236,9800000236,person236@example.com,Male,Yes,1,Graduate,No,5500,1260,170,360,1,Rural,Y
+LP001786,Person 237,9800000237,person237@example.com,Male,Yes,0,Graduate,,5746,0,255,360,,Urban,N
+LP001788,Person 238,9800000238,person238@example.com,Female,No,0,Graduate,Yes,3463,0,122,360,,Urban,Y
+LP001790,Person 239,9800000239,person239@example.com,Female,No,1,Graduate,No,3812,0,112,360,1,Rural,Y
+LP001792,Person 240,9800000240,person240@example.com,Male,Yes,1,Graduate,No,3315,0,96,360,1,Semiurban,Y
+LP001798,Person 241,9800000241,person241@example.com,Male,Yes,2,Graduate,No,5819,5000,120,360,1,Rural,Y
+LP001800,Person 242,9800000242,person242@example.com,Male,Yes,1,Not Graduate,No,2510,1983,140,180,1,Urban,N
+LP001806,Person 243,9800000243,person243@example.com,Male,No,0,Graduate,No,2965,5701,155,60,1,Urban,Y
+LP001807,Person 244,9800000244,person244@example.com,Male,Yes,2,Graduate,Yes,6250,1300,108,360,1,Rural,Y
+LP001811,Person 245,9800000245,person245@example.com,Male,Yes,0,Not Graduate,No,3406,4417,123,360,1,Semiurban,Y
+LP001813,Person 246,9800000246,person246@example.com,Male,No,0,Graduate,Yes,6050,4333,120,180,1,Urban,N
+LP001814,Person 247,9800000247,person247@example.com,Male,Yes,2,Graduate,No,9703,0,112,360,1,Urban,Y
+LP001819,Person 248,9800000248,person248@example.com,Male,Yes,1,Not Graduate,No,6608,0,137,180,1,Urban,Y
+LP001824,Person 249,9800000249,person249@example.com,Male,Yes,1,Graduate,No,2882,1843,123,480,1,Semiurban,Y
+LP001825,Person 250,9800000250,person250@example.com,Male,Yes,0,Graduate,No,1809,1868,90,360,1,Urban,Y
+LP001835,Person 251,9800000251,person251@example.com,Male,Yes,0,Not Graduate,No,1668,3890,201,360,0,Semiurban,N
+LP001836,Person 252,9800000252,person252@example.com,Female,No,2,Graduate,No,3427,0,138,360,1,Urban,N
+LP001841,Person 253,9800000253,person253@example.com,Male,No,0,Not Graduate,Yes,2583,2167,104,360,1,Rural,Y
+LP001843,Person 254,9800000254,person254@example.com,Male,Yes,1,Not Graduate,No,2661,7101,279,180,1,Semiurban,Y
+LP001844,Person 255,9800000255,person255@example.com,Male,No,0,Graduate,Yes,16250,0,192,360,0,Urban,N
+LP001846,Person 256,9800000256,person256@example.com,Female,No,3+,Graduate,No,3083,0,255,360,1,Rural,Y
+LP001849,Person 257,9800000257,person257@example.com,Male,No,0,Not Graduate,No,6045,0,115,360,0,Rural,N
+LP001854,Person 258,9800000258,person258@example.com,Male,Yes,3+,Graduate,No,5250,0,94,360,1,Urban,N
+LP001859,Person 259,9800000259,person259@example.com,Male,Yes,0,Graduate,No,14683,2100,304,360,1,Rural,N
+LP001864,Person 260,9800000260,person260@example.com,Male,Yes,3+,Not Graduate,No,4931,0,128,360,,Semiurban,N
+LP001865,Person 261,9800000261,person261@example.com,Male,Yes,1,Graduate,No,6083,4250,330,360,,Urban,Y
+LP001868,Person 262,9800000262,person262@example.com,Male,No,0,Graduate,No,2060,2209,134,360,1,Semiurban,Y
+LP001870,Person 263,9800000263,person263@example.com,Female,No,1,Graduate,No,3481,0,155,36,1,Semiurban,N
+LP001871,Person 264,9800000264,person264@example.com,Female,No,0,Graduate,No,7200,0,120,360,1,Rural,Y
+LP001872,Person 265,9800000265,person265@example.com,Male,No,0,Graduate,Yes,5166,0,128,360,1,Semiurban,Y
+LP001875,Person 266,9800000266,person266@example.com,Male,No,0,Graduate,No,4095,3447,151,360,1,Rural,Y
+LP001877,Person 267,9800000267,person267@example.com,Male,Yes,2,Graduate,No,4708,1387,150,360,1,Semiurban,Y
+LP001882,Person 268,9800000268,person268@example.com,Male,Yes,3+,Graduate,No,4333,1811,160,360,0,Urban,Y
+LP001883,Person 269,9800000269,person269@example.com,Female,No,0,Graduate,,3418,0,135,360,1,Rural,N
+LP001884,Person 270,9800000270,person270@example.com,Female,No,1,Graduate,No,2876,1560,90,360,1,Urban,Y
+LP001888,Person 271,9800000271,person271@example.com,Female,No,0,Graduate,No,3237,0,30,360,1,Urban,Y
+LP001891,Person 272,9800000272,person272@example.com,Male,Yes,0,Graduate,No,11146,0,136,360,1,Urban,Y
+LP001892,Person 273,9800000273,person273@example.com,Male,No,0,Graduate,No,2833,1857,126,360,1,Rural,Y
+LP001894,Person 274,9800000274,person274@example.com,Male,Yes,0,Graduate,No,2620,2223,150,360,1,Semiurban,Y
+LP001896,Person 275,9800000275,person275@example.com,Male,Yes,2,Graduate,No,3900,0,90,360,1,Semiurban,Y
+LP001900,Person 276,9800000276,person276@example.com,Male,Yes,1,Graduate,No,2750,1842,115,360,1,Semiurban,Y
+LP001903,Person 277,9800000277,person277@example.com,Male,Yes,0,Graduate,No,3993,3274,207,360,1,Semiurban,Y
+LP001904,Person 278,9800000278,person278@example.com,Male,Yes,0,Graduate,No,3103,1300,80,360,1,Urban,Y
+LP001907,Person 279,9800000279,person279@example.com,Male,Yes,0,Graduate,No,14583,0,436,360,1,Semiurban,Y
+LP001908,Person 280,9800000280,person280@example.com,Female,Yes,0,Not Graduate,No,4100,0,124,360,,Rural,Y
+LP001910,Person 281,9800000281,person281@example.com,Male,No,1,Not Graduate,Yes,4053,2426,158,360,0,Urban,N
+LP001914,Person 282,9800000282,person282@example.com,Male,Yes,0,Graduate,No,3927,800,112,360,1,Semiurban,Y
+LP001915,Person 283,9800000283,person283@example.com,Male,Yes,2,Graduate,No,2301,985.7999878,78,180,1,Urban,Y
+LP001917,Person 284,9800000284,person284@example.com,Female,No,0,Graduate,No,1811,1666,54,360,1,Urban,Y
+LP001922,Person 285,9800000285,person285@example.com,Male,Yes,0,Graduate,No,20667,0,,360,1,Rural,N
+LP001924,Person 286,9800000286,person286@example.com,Male,No,0,Graduate,No,3158,3053,89,360,1,Rural,Y
+LP001925,Person 287,9800000287,person287@example.com,Female,No,0,Graduate,Yes,2600,1717,99,300,1,Semiurban,N
+LP001926,Person 288,9800000288,person288@example.com,Male,Yes,0,Graduate,No,3704,2000,120,360,1,Rural,Y
+LP001931,Person 289,9800000289,person289@example.com,Female,No,0,Graduate,No,4124,0,115,360,1,Semiurban,Y
+LP001935,Person 290,9800000290,person290@example.com,Male,No,0,Graduate,No,9508,0,187,360,1,Rural,Y
+LP001936,Person 291,9800000291,person291@example.com,Male,Yes,0,Graduate,No,3075,2416,139,360,1,Rural,Y
+LP001938,Person 292,9800000292,person292@example.com,Male,Yes,2,Graduate,No,4400,0,127,360,0,Semiurban,N
+LP001940,Person 293,9800000293,person293@example.com,Male,Yes,2,Graduate,No,3153,1560,134,360,1,Urban,Y
+LP001945,Person 294,9800000294,person294@example.com,Female,No,,Graduate,No,5417,0,143,480,0,Urban,N
+LP001947,Person 295,9800000295,person295@example.com,Male,Yes,0,Graduate,No,2383,3334,172,360,1,Semiurban,Y
+LP001949,Person 296,9800000296,person296@example.com,Male,Yes,3+,Graduate,,4416,1250,110,360,1,Urban,Y
+LP001953,Person 297,9800000297,person297@example.com,Male,Yes,1,Graduate,No,6875,0,200,360,1,Semiurban,Y
+LP001954,Person 298,9800000298,person298@example.com,Female,Yes,1,Graduate,No,4666,0,135,360,1,Urban,Y
+LP001955,Person 299,9800000299,person299@example.com,Female,No,0,Graduate,No,5000,2541,151,480,1,Rural,N
+LP001963,Person 300,9800000300,person300@example.com,Male,Yes,1,Graduate,No,2014,2925,113,360,1,Urban,N
+LP001964,Person 301,9800000301,person301@example.com,Male,Yes,0,Not Graduate,No,1800,2934,93,360,0,Urban,N
+LP001972,Person 302,9800000302,person302@example.com,Male,Yes,,Not Graduate,No,2875,1750,105,360,1,Semiurban,Y
+LP001974,Person 303,9800000303,person303@example.com,Female,No,0,Graduate,No,5000,0,132,360,1,Rural,Y
+LP001977,Person 304,9800000304,person304@example.com,Male,Yes,1,Graduate,No,1625,1803,96,360,1,Urban,Y
+LP001978,Person 305,9800000305,person305@example.com,Male,No,0,Graduate,No,4000,2500,140,360,1,Rural,Y
+LP001990,Person 306,9800000306,person306@example.com,Male,No,0,Not Graduate,No,2000,0,,360,1,Urban,N
+LP001993,Person 307,9800000307,person307@example.com,Female,No,0,Graduate,No,3762,1666,135,360,1,Rural,Y
+LP001994,Person 308,9800000308,person308@example.com,Female,No,0,Graduate,No,2400,1863,104,360,0,Urban,N
+LP001996,Person 309,9800000309,person309@example.com,Male,No,0,Graduate,No,20233,0,480,360,1,Rural,N
+LP001998,Person 310,9800000310,person310@example.com,Male,Yes,2,Not Graduate,No,7667,0,185,360,,Rural,Y
+LP002002,Person 311,9800000311,person311@example.com,Female,No,0,Graduate,No,2917,0,84,360,1,Semiurban,Y
+LP002004,Person 312,9800000312,person312@example.com,Male,No,0,Not Graduate,No,2927,2405,111,360,1,Semiurban,Y
+LP002006,Person 313,9800000313,person313@example.com,Female,No,0,Graduate,No,2507,0,56,360,1,Rural,Y
+LP002008,Person 314,9800000314,person314@example.com,Male,Yes,2,Graduate,Yes,5746,0,144,84,,Rural,Y
+LP002024,Person 315,9800000315,person315@example.com,,Yes,0,Graduate,No,2473,1843,159,360,1,Rural,N
+LP002031,Person 316,9800000316,person316@example.com,Male,Yes,1,Not Graduate,No,3399,1640,111,180,1,Urban,Y
+LP002035,Person 317,9800000317,person317@example.com,Male,Yes,2,Graduate,No,3717,0,120,360,1,Semiurban,Y
+LP002036,Person 318,9800000318,person318@example.com,Male,Yes,0,Graduate,No,2058,2134,88,360,,Urban,Y
+LP002043,Person 319,9800000319,person319@example.com,Female,No,1,Graduate,No,3541,0,112,360,,Semiurban,Y
+LP002050,Person 320,9800000320,person320@example.com,Male,Yes,1,Graduate,Yes,10000,0,155,360,1,Rural,N
+LP002051,Person 321,9800000321,person321@example.com,Male,Yes,0,Graduate,No,2400,2167,115,360,1,Semiurban,Y
+LP002053,Person 322,9800000322,person322@example.com,Male,Yes,3+,Graduate,No,4342,189,124,360,1,Semiurban,Y
+LP002054,Person 323,9800000323,person323@example.com,Male,Yes,2,Not Graduate,No,3601,1590,,360,1,Rural,Y
+LP002055,Person 324,9800000324,person324@example.com,Female,No,0,Graduate,No,3166,2985,132,360,,Rural,Y
+LP002065,Person 325,9800000325,person325@example.com,Male,Yes,3+,Graduate,No,15000,0,300,360,1,Rural,Y
+LP002067,Person 326,9800000326,person326@example.com,Male,Yes,1,Graduate,Yes,8666,4983,376,360,0,Rural,N
+LP002068,Person 327,9800000327,person327@example.com,Male,No,0,Graduate,No,4917,0,130,360,0,Rural,Y
+LP002082,Person 328,9800000328,person328@example.com,Male,Yes,0,Graduate,Yes,5818,2160,184,360,1,Semiurban,Y
+LP002086,Person 329,9800000329,person329@example.com,Female,Yes,0,Graduate,No,4333,2451,110,360,1,Urban,N
+LP002087,Person 330,9800000330,person330@example.com,Female,No,0,Graduate,No,2500,0,67,360,1,Urban,Y
+LP002097,Person 331,9800000331,person331@example.com,Male,No,1,Graduate,No,4384,1793,117,360,1,Urban,Y
+LP002098,Person 332,9800000332,person332@example.com,Male,No,0,Graduate,No,2935,0,98,360,1,Semiurban,Y
+LP002100,Person 333,9800000333,person333@example.com,Male,No,,Graduate,No,2833,0,71,360,1,Urban,Y
+LP002101,Person 334,9800000334,person334@example.com,Male,Yes,0,Graduate,,63337,0,490,180,1,Urban,Y
+LP002103,Person 335,9800000335,person335@example.com,,Yes,1,Graduate,Yes,9833,1833,182,180,1,Urban,Y
+LP002106,Person 336,9800000336,person336@example.com,Male,Yes,,Graduate,Yes,5503,4490,70,,1,Semiurban,Y
+LP002110,Person 337,9800000337,person337@example.com,Male,Yes,1,Graduate,,5250,688,160,360,1,Rural,Y
+LP002112,Person 338,9800000338,person338@example.com,Male,Yes,2,Graduate,Yes,2500,4600,176,360,1,Rural,Y
+LP002113,Person 339,9800000339,person339@example.com,Female,No,3+,Not Graduate,No,1830,0,,360,0,Urban,N
+LP002114,Person 340,9800000340,person340@example.com,Female,No,0,Graduate,No,4160,0,71,360,1,Semiurban,Y
+LP002115,Person 341,9800000341,person341@example.com,Male,Yes,3+,Not Graduate,No,2647,1587,173,360,1,Rural,N
+LP002116,Person 342,9800000342,person342@example.com,Female,No,0,Graduate,No,2378,0,46,360,1,Rural,N
+LP002119,Person 343,9800000343,person343@example.com,Male,Yes,1,Not Graduate,No,4554,1229,158,360,1,Urban,Y
+LP002126,Person 344,9800000344,person344@example.com,Male,Yes,3+,Not Graduate,No,3173,0,74,360,1,Semiurban,Y
+LP002128,Person 345,9800000345,person345@example.com,Male,Yes,2,Graduate,,2583,2330,125,360,1,Rural,Y
+LP002129,Person 346,9800000346,person346@example.com,Male,Yes,0,Graduate,No,2499,2458,160,360,1,Semiurban,Y
+LP002130,Person 347,9800000347,person347@example.com,Male,Yes,,Not Graduate,No,3523,3230,152,360,0,Rural,N
+LP002131,Person 348,9800000348,person348@example.com,Male,Yes,2,Not Graduate,No,3083,2168,126,360,1,Urban,Y
+LP002137,Person 349,9800000349,person349@example.com,Male,Yes,0,Graduate,No,6333,4583,259,360,,Semiurban,Y
+LP002138,Person 350,9800000350,person350@example.com,Male,Yes,0,Graduate,No,2625,6250,187,360,1,Rural,Y
+LP002139,Person 351,9800000351,person351@example.com,Male,Yes,0,Graduate,No,9083,0,228,360,1,Semiurban,Y
+LP002140,Person 352,9800000352,person352@example.com,Male,No,0,Graduate,No,8750,4167,308,360,1,Rural,N
+LP002141,Person 353,9800000353,person353@example.com,Male,Yes,3+,Graduate,No,2666,2083,95,360,1,Rural,Y
+LP002142,Person 354,9800000354,person354@example.com,Female,Yes,0,Graduate,Yes,5500,0,105,360,0,Rural,N
+LP002143,Person 355,9800000355,person355@example.com,Female,Yes,0,Graduate,No,2423,505,130,360,1,Semiurban,Y
+LP002144,Person 356,9800000356,person356@example.com,Female,No,,Graduate,No,3813,0,116,180,1,Urban,Y
+LP002149,Person 357,9800000357,person357@example.com,Male,Yes,2,Graduate,No,8333,3167,165,360,1,Rural,Y
+LP002151,Person 358,9800000358,person358@example.com,Male,Yes,1,Graduate,No,3875,0,67,360,1,Urban,N
+LP002158,Person 359,9800000359,person359@example.com,Male,Yes,0,Not Graduate,No,3000,1666,100,480,0,Urban,N
+LP002160,Person 360,9800000360,person360@example.com,Male,Yes,3+,Graduate,No,5167,3167,200,360,1,Semiurban,Y
+LP002161,Person 361,9800000361,person361@example.com,Female,No,1,Graduate,No,4723,0,81,360,1,Semiurban,N
+LP002170,Person 362,9800000362,person362@example.com,Male,Yes,2,Graduate,No,5000,3667,236,360,1,Semiurban,Y
+LP002175,Person 363,9800000363,person363@example.com,Male,Yes,0,Graduate,No,4750,2333,130,360,1,Urban,Y
+LP002178,Person 364,9800000364,person364@example.com,Male,Yes,0,Graduate,No,3013,3033,95,300,,Urban,Y
+LP002180,Person 365,9800000365,person365@example.com,Male,No,0,Graduate,Yes,6822,0,141,360,1,Rural,Y
+LP002181,Person 366,9800000366,person366@example.com,Male,No,0,Not Graduate,No,6216,0,133,360,1,Rural,N
+LP002187,Person 367,9800000367,person367@example.com,Male,No,0,Graduate,No,2500,0,96,480,1,Semiurban,N
+LP002188,Person 368,9800000368,person368@example.com,Male,No,0,Graduate,No,5124,0,124,,0,Rural,N
+LP002190,Person 369,9800000369,person369@example.com,Male,Yes,1,Graduate,No,6325,0,175,360,1,Semiurban,Y
+LP002191,Person 370,9800000370,person370@example.com,Male,Yes,0,Graduate,No,19730,5266,570,360,1,Rural,N
+LP002194,Person 371,9800000371,person371@example.com,Female,No,0,Graduate,Yes,15759,0,55,360,1,Semiurban,Y
+LP002197,Person 372,9800000372,person372@example.com,Male,Yes,2,Graduate,No,5185,0,155,360,1,Semiurban,Y
+LP002201,Person 373,9800000373,person373@example.com,Male,Yes,2,Graduate,Yes,9323,7873,380,300,1,Rural,Y
+LP002205,Person 374,9800000374,person374@example.com,Male,No,1,Graduate,No,3062,1987,111,180,0,Urban,N
+LP002209,Person 375,9800000375,person375@example.com,Female,No,0,Graduate,,2764,1459,110,360,1,Urban,Y
+LP002211,Person 376,9800000376,person376@example.com,Male,Yes,0,Graduate,No,4817,923,120,180,1,Urban,Y
+LP002219,Person 377,9800000377,person377@example.com,Male,Yes,3+,Graduate,No,8750,4996,130,360,1,Rural,Y
+LP002223,Person 378,9800000378,person378@example.com,Male,Yes,0,Graduate,No,4310,0,130,360,,Semiurban,Y
+LP002224,Person 379,9800000379,person379@example.com,Male,No,0,Graduate,No,3069,0,71,480,1,Urban,N
+LP002225,Person 380,9800000380,person380@example.com,Male,Yes,2,Graduate,No,5391,0,130,360,1,Urban,Y
+LP002226,Person 381,9800000381,person381@example.com,Male,Yes,0,Graduate,,3333,2500,128,360,1,Semiurban,Y
+LP002229,Person 382,9800000382,person382@example.com,Male,No,0,Graduate,No,5941,4232,296,360,1,Semiurban,Y
+LP002231,Person 383,9800000383,person383@example.com,Female,No,0,Graduate,No,6000,0,156,360,1,Urban,Y
+LP002234,Person 384,9800000384,person384@example.com,Male,No,0,Graduate,Yes,7167,0,128,360,1,Urban,Y
+LP002236,Person 385,9800000385,person385@example.com,Male,Yes,2,Graduate,No,4566,0,100,360,1,Urban,N
+LP002237,Person 386,9800000386,person386@example.com,Male,No,1,Graduate,,3667,0,113,180,1,Urban,Y
+LP002239,Person 387,9800000387,person387@example.com,Male,No,0,Not Graduate,No,2346,1600,132,360,1,Semiurban,Y
+LP002243,Person 388,9800000388,person388@example.com,Male,Yes,0,Not Graduate,No,3010,3136,,360,0,Urban,N
+LP002244,Person 389,9800000389,person389@example.com,Male,Yes,0,Graduate,No,2333,2417,136,360,1,Urban,Y
+LP002250,Person 390,9800000390,person390@example.com,Male,Yes,0,Graduate,No,5488,0,125,360,1,Rural,Y
+LP002255,Person 391,9800000391,person391@example.com,Male,No,3+,Graduate,No,9167,0,185,360,1,Rural,Y
+LP002262,Person 392,9800000392,person392@example.com,Male,Yes,3+,Graduate,No,9504,0,275,360,1,Rural,Y
+LP002263,Person 393,9800000393,person393@example.com,Male,Yes,0,Graduate,No,2583,2115,120,360,,Urban,Y
+LP002265,Person 394,9800000394,person394@example.com,Male,Yes,2,Not Graduate,No,1993,1625,113,180,1,Semiurban,Y
+LP002266,Person 395,9800000395,person395@example.com,Male,Yes,2,Graduate,No,3100,1400,113,360,1,Urban,Y
+LP002272,Person 396,9800000396,person396@example.com,Male,Yes,2,Graduate,No,3276,484,135,360,,Semiurban,Y
+LP002277,Person 397,9800000397,person397@example.com,Female,No,0,Graduate,No,3180,0,71,360,0,Urban,N
+LP002281,Person 398,9800000398,person398@example.com,Male,Yes,0,Graduate,No,3033,1459,95,360,1,Urban,Y
+LP002284,Person 399,9800000399,person399@example.com,Male,No,0,Not Graduate,No,3902,1666,109,360,1,Rural,Y
+LP002287,Person 400,9800000400,person400@example.com,Female,No,0,Graduate,No,1500,1800,103,360,0,Semiurban,N
+LP002288,Person 401,9800000401,person401@example.com,Male,Yes,2,Not Graduate,No,2889,0,45,180,0,Urban,N
+LP002296,Person 402,9800000402,person402@example.com,Male,No,0,Not Graduate,No,2755,0,65,300,1,Rural,N
+LP002297,Person 403,9800000403,person403@example.com,Male,No,0,Graduate,No,2500,20000,103,360,1,Semiurban,Y
+LP002300,Person 404,9800000404,person404@example.com,Female,No,0,Not Graduate,No,1963,0,53,360,1,Semiurban,Y
+LP002301,Person 405,9800000405,person405@example.com,Female,No,0,Graduate,Yes,7441,0,194,360,1,Rural,N
+LP002305,Person 406,9800000406,person406@example.com,Female,No,0,Graduate,No,4547,0,115,360,1,Semiurban,Y
+LP002308,Person 407,9800000407,person407@example.com,Male,Yes,0,Not Graduate,No,2167,2400,115,360,1,Urban,Y
+LP002314,Person 408,9800000408,person408@example.com,Female,No,0,Not Graduate,No,2213,0,66,360,1,Rural,Y
+LP002315,Person 409,9800000409,person409@example.com,Male,Yes,1,Graduate,No,8300,0,152,300,0,Semiurban,N
+LP002317,Person 410,9800000410,person410@example.com,Male,Yes,3+,Graduate,No,81000,0,360,360,0,Rural,N
+LP002318,Person 411,9800000411,person411@example.com,Female,No,1,Not Graduate,Yes,3867,0,62,360,1,Semiurban,N
+LP002319,Person 412,9800000412,person412@example.com,Male,Yes,0,Graduate,,6256,0,160,360,,Urban,Y
+LP002328,Person 413,9800000413,person413@example.com,Male,Yes,0,Not Graduate,No,6096,0,218,360,0,Rural,N
+LP002332,Person 414,9800000414,person414@example.com,Male,Yes,0,Not Graduate,No,2253,2033,110,360,1,Rural,Y
+LP002335,Person 415,9800000415,person415@example.com,Female,Yes,0,Not Graduate,No,2149,3237,178,360,0,Semiurban,N
+LP002337,Person 416,9800000416,person416@example.com,Female,No,0,Graduate,No,2995,0,60,360,1,Urban,Y
+LP002341,Person 417,9800000417,person417@example.com,Female,No,1,Graduate,No,2600,0,160,360,1,Urban,N
+LP002342,Person 418,9800000418,person418@example.com,Male,Yes,2,Graduate,Yes,1600,20000,239,360,1,Urban,N
+LP002345,Person 419,9800000419,person419@example.com,Male,Yes,0,Graduate,No,1025,2773,112,360,1,Rural,Y
+LP002347,Person 420,9800000420,person420@example.com,Male,Yes,0,Graduate,No,3246,1417,138,360,1,Semiurban,Y
+LP002348,Person 421,9800000421,person421@example.com,Male,Yes,0,Graduate,No,5829,0,138,360,1,Rural,Y
+LP002357,Person 422,9800000422,person422@example.com,Female,No,0,Not Graduate,No,2720,0,80,,0,Urban,N
+LP002361,Person 423,9800000423,person423@example.com,Male,Yes,0,Graduate,No,1820,1719,100,360,1,Urban,Y
+LP002362,Person 424,9800000424,person424@example.com,Male,Yes,1,Graduate,No,7250,1667,110,,0,Urban,N
+LP002364,Person 425,9800000425,person425@example.com,Male,Yes,0,Graduate,No,14880,0,96,360,1,Semiurban,Y
+LP002366,Person 426,9800000426,person426@example.com,Male,Yes,0,Graduate,No,2666,4300,121,360,1,Rural,Y
+LP002367,Person 427,9800000427,person427@example.com,Female,No,1,Not Graduate,No,4606,0,81,360,1,Rural,N
+LP002368,Person 428,9800000428,person428@example.com,Male,Yes,2,Graduate,No,5935,0,133,360,1,Semiurban,Y
+LP002369,Person 429,9800000429,person429@example.com,Male,Yes,0,Graduate,No,2920,16.12000084,87,360,1,Rural,Y
+LP002370,Person 430,9800000430,person430@example.com,Male,No,0,Not Graduate,No,2717,0,60,180,1,Urban,Y
+LP002377,Person 431,9800000431,person431@example.com,Female,No,1,Graduate,Yes,8624,0,150,360,1,Semiurban,Y
+LP002379,Person 432,9800000432,person432@example.com,Male,No,0,Graduate,No,6500,0,105,360,0,Rural,N
+LP002386,Person 433,9800000433,person433@example.com,Male,No,0,Graduate,,12876,0,405,360,1,Semiurban,Y
+LP002387,Person 434,9800000434,person434@example.com,Male,Yes,0,Graduate,No,2425,2340,143,360,1,Semiurban,Y
+LP002390,Person 435,9800000435,person435@example.com,Male,No,0,Graduate,No,3750,0,100,360,1,Urban,Y
+LP002393,Person 436,9800000436,person436@example.com,Female,,,Graduate,No,10047,0,,240,1,Semiurban,Y
+LP002398,Person 437,9800000437,person437@example.com,Male,No,0,Graduate,No,1926,1851,50,360,1,Semiurban,Y
+LP002401,Person 438,9800000438,person438@example.com,Male,Yes,0,Graduate,No,2213,1125,,360,1,Urban,Y
+LP002403,Person 439,9800000439,person439@example.com,Male,No,0,Graduate,Yes,10416,0,187,360,0,Urban,N
+LP002407,Person 440,9800000440,person440@example.com,Female,Yes,0,Not Graduate,Yes,7142,0,138,360,1,Rural,Y
+LP002408,Person 441,9800000441,person441@example.com,Male,No,0,Graduate,No,3660,5064,187,360,1,Semiurban,Y
+LP002409,Person 442,9800000442,person442@example.com,Male,Yes,0,Graduate,No,7901,1833,180,360,1,Rural,Y
+LP002418,Person 443,9800000443,person443@example.com,Male,No,3+,Not Graduate,No,4707,1993,148,360,1,Semiurban,Y
+LP002422,Person 444,9800000444,person444@example.com,Male,No,1,Graduate,No,37719,0,152,360,1,Semiurban,Y
+LP002424,Person 445,9800000445,person445@example.com,Male,Yes,0,Graduate,No,7333,8333,175,300,,Rural,Y
+LP002429,Person 446,9800000446,person446@example.com,Male,Yes,1,Graduate,Yes,3466,1210,130,360,1,Rural,Y
+LP002434,Person 447,9800000447,person447@example.com,Male,Yes,2,Not Graduate,No,4652,0,110,360,1,Rural,Y
+LP002435,Person 448,9800000448,person448@example.com,Male,Yes,0,Graduate,,3539,1376,55,360,1,Rural,N
+LP002443,Person 449,9800000449,person449@example.com,Male,Yes,2,Graduate,No,3340,1710,150,360,0,Rural,N
+LP002444,Person 450,9800000450,person450@example.com,Male,No,1,Not Graduate,Yes,2769,1542,190,360,,Semiurban,N
+LP002446,Person 451,9800000451,person451@example.com,Male,Yes,2,Not Graduate,No,2309,1255,125,360,0,Rural,N
+LP002447,Person 452,9800000452,person452@example.com,Male,Yes,2,Not Graduate,No,1958,1456,60,300,,Urban,Y
+LP002448,Person 453,9800000453,person453@example.com,Male,Yes,0,Graduate,No,3948,1733,149,360,0,Rural,N
+LP002449,Person 454,9800000454,person454@example.com,Male,Yes,0,Graduate,No,2483,2466,90,180,0,Rural,Y
+LP002453,Person 455,9800000455,person455@example.com,Male,No,0,Graduate,Yes,7085,0,84,360,1,Semiurban,Y
+LP002455,Person 456,9800000456,person456@example.com,Male,Yes,2,Graduate,No,3859,0,96,360,1,Semiurban,Y
+LP002459,Person 457,9800000457,person457@example.com,Male,Yes,0,Graduate,No,4301,0,118,360,1,Urban,Y
+LP002467,Person 458,9800000458,person458@example.com,Male,Yes,0,Graduate,No,3708,2569,173,360,1,Urban,N
+LP002472,Person 459,9800000459,person459@example.com,Male,No,2,Graduate,No,4354,0,136,360,1,Rural,Y
+LP002473,Person 460,9800000460,person460@example.com,Male,Yes,0,Graduate,No,8334,0,160,360,1,Semiurban,N
+LP002478,Person 461,9800000461,person461@example.com,,Yes,0,Graduate,Yes,2083,4083,160,360,,Semiurban,Y
+LP002484,Person 462,9800000462,person462@example.com,Male,Yes,3+,Graduate,No,7740,0,128,180,1,Urban,Y
+LP002487,Person 463,9800000463,person463@example.com,Male,Yes,0,Graduate,No,3015,2188,153,360,1,Rural,Y
+LP002489,Person 464,9800000464,person464@example.com,Female,No,1,Not Graduate,,5191,0,132,360,1,Semiurban,Y
+LP002493,Person 465,9800000465,person465@example.com,Male,No,0,Graduate,No,4166,0,98,360,0,Semiurban,N
+LP002494,Person 466,9800000466,person466@example.com,Male,No,0,Graduate,No,6000,0,140,360,1,Rural,Y
+LP002500,Person 467,9800000467,person467@example.com,Male,Yes,3+,Not Graduate,No,2947,1664,70,180,0,Urban,N
+LP002501,Person 468,9800000468,person468@example.com,,Yes,0,Graduate,No,16692,0,110,360,1,Semiurban,Y
+LP002502,Person 469,9800000469,person469@example.com,Female,Yes,2,Not Graduate,,210,2917,98,360,1,Semiurban,Y
+LP002505,Person 470,9800000470,person470@example.com,Male,Yes,0,Graduate,No,4333,2451,110,360,1,Urban,N
+LP002515,Person 471,9800000471,person471@example.com,Male,Yes,1,Graduate,Yes,3450,2079,162,360,1,Semiurban,Y
+LP002517,Person 472,9800000472,person472@example.com,Male,Yes,1,Not Graduate,No,2653,1500,113,180,0,Rural,N
+LP002519,Person 473,9800000473,person473@example.com,Male,Yes,3+,Graduate,No,4691,0,100,360,1,Semiurban,Y
+LP002522,Person 474,9800000474,person474@example.com,Female,No,0,Graduate,Yes,2500,0,93,360,,Urban,Y
+LP002524,Person 475,9800000475,person475@example.com,Male,No,2,Graduate,No,5532,4648,162,360,1,Rural,Y
+LP002527,Person 476,9800000476,person476@example.com,Male,Yes,2,Graduate,Yes,16525,1014,150,360,1,Rural,Y
+LP002529,Person 477,9800000477,person477@example.com,Male,Yes,2,Graduate,No,6700,1750,230,300,1,Semiurban,Y
+LP002530,Person 478,9800000478,person478@example.com,,Yes,2,Graduate,No,2873,1872,132,360,0,Semiurban,N
+LP002531,Person 479,9800000479,person479@example.com,Male,Yes,1,Graduate,Yes,16667,2250,86,360,1,Semiurban,Y
+LP002533,Person 480,9800000480,person480@example.com,Male,Yes,2,Graduate,No,2947,1603,,360,1,Urban,N
+LP002534,Person 481,9800000481,person481@example.com,Female,No,0,Not Graduate,No,4350,0,154,360,1,Rural,Y
+LP002536,Person 482,9800000482,person482@example.com,Male,Yes,3+,Not Graduate,No,3095,0,113,360,1,Rural,Y
+LP002537,Person 483,9800000483,person483@example.com,Male,Yes,0,Graduate,No,2083,3150,128,360,1,Semiurban,Y
+LP002541,Person 484,9800000484,person484@example.com,Male,Yes,0,Graduate,No,10833,0,234,360,1,Semiurban,Y
+LP002543,Person 485,9800000485,person485@example.com,Male,Yes,2,Graduate,No,8333,0,246,360,1,Semiurban,Y
+LP002544,Person 486,9800000486,person486@example.com,Male,Yes,1,Not Graduate,No,1958,2436,131,360,1,Rural,Y
+LP002545,Person 487,9800000487,person487@example.com,Male,No,2,Graduate,No,3547,0,80,360,0,Rural,N
+LP002547,Person 488,9800000488,person488@example.com,Male,Yes,1,Graduate,No,18333,0,500,360,1,Urban,N
+LP002555,Person 489,9800000489,person489@example.com,Male,Yes,2,Graduate,Yes,4583,2083,160,360,1,Semiurban,Y
+LP002556,Person 490,9800000490,person490@example.com,Male,No,0,Graduate,No,2435,0,75,360,1,Urban,N
+LP002560,Person 491,9800000491,person491@example.com,Male,No,0,Not Graduate,No,2699,2785,96,360,,Semiurban,Y
+LP002562,Person 492,9800000492,person492@example.com,Male,Yes,1,Not Graduate,No,5333,1131,186,360,,Urban,Y
+LP002571,Person 493,9800000493,person493@example.com,Male,No,0,Not Graduate,No,3691,0,110,360,1,Rural,Y
+LP002582,Person 494,9800000494,person494@example.com,Female,No,0,Not Graduate,Yes,17263,0,225,360,1,Semiurban,Y
+LP002585,Person 495,9800000495,person495@example.com,Male,Yes,0,Graduate,No,3597,2157,119,360,0,Rural,N
+LP002586,Person 496,9800000496,person496@example.com,Female,Yes,1,Graduate,No,3326,913,105,84,1,Semiurban,Y
+LP002587,Person 497,9800000497,person497@example.com,Male,Yes,0,Not Graduate,No,2600,1700,107,360,1,Rural,Y
+LP002588,Person 498,9800000498,person498@example.com,Male,Yes,0,Graduate,No,4625,2857,111,12,,Urban,Y
+LP002600,Person 499,9800000499,person499@example.com,Male,Yes,1,Graduate,Yes,2895,0,95,360,1,Semiurban,Y
+LP002602,Person 500,9800000500,person500@example.com,Male,No,0,Graduate,No,6283,4416,209,360,0,Rural,N
+LP002603,Person 501,9800000501,person501@example.com,Female,No,0,Graduate,No,645,3683,113,480,1,Rural,Y
+LP002606,Person 502,9800000502,person502@example.com,Female,No,0,Graduate,No,3159,0,100,360,1,Semiurban,Y
+LP002615,Person 503,9800000503,person503@example.com,Male,Yes,2,Graduate,No,4865,5624,208,360,1,Semiurban,Y
+LP002618,Person 504,9800000504,person504@example.com,Male,Yes,1,Not Graduate,No,4050,5302,138,360,,Rural,N
+LP002619,Person 505,9800000505,person505@example.com,Male,Yes,0,Not Graduate,No,3814,1483,124,300,1,Semiurban,Y
+LP002622,Person 506,9800000506,person506@example.com,Male,Yes,2,Graduate,No,3510,4416,243,360,1,Rural,Y
+LP002624,Person 507,9800000507,person507@example.com,Male,Yes,0,Graduate,No,20833,6667,480,360,,Urban,Y
+LP002625,Person 508,9800000508,person508@example.com,,No,0,Graduate,No,3583,0,96,360,1,Urban,N
+LP002626,Person 509,9800000509,person509@example.com,Male,Yes,0,Graduate,Yes,2479,3013,188,360,1,Urban,Y
+LP002634,Person 510,9800000510,person510@example.com,Female,No,1,Graduate,No,13262,0,40,360,1,Urban,Y
+LP002637,Person 511,9800000511,person511@example.com,Male,No,0,Not Graduate,No,3598,1287,100,360,1,Rural,N
+LP002640,Person 512,9800000512,person512@example.com,Male,Yes,1,Graduate,No,6065,2004,250,360,1,Semiurban,Y
+LP002643,Person 513,9800000513,person513@example.com,Male,Yes,2,Graduate,No,3283,2035,148,360,1,Urban,Y
+LP002648,Person 514,9800000514,person514@example.com,Male,Yes,0,Graduate,No,2130,6666,70,180,1,Semiurban,N
+LP002652,Person 515,9800000515,person515@example.com,Male,No,0,Graduate,No,5815,3666,311,360,1,Rural,N
+LP002659,Person 516,9800000516,person516@example.com,Male,Yes,3+,Graduate,No,3466,3428,150,360,1,Rural,Y
+LP002670,Person 517,9800000517,person517@example.com,Female,Yes,2,Graduate,No,2031,1632,113,480,1,Semiurban,Y
+LP002682,Person 518,9800000518,person518@example.com,Male,Yes,,Not Graduate,No,3074,1800,123,360,0,Semiurban,N
+LP002683,Person 519,9800000519,person519@example.com,Male,No,0,Graduate,No,4683,1915,185,360,1,Semiurban,N
+LP002684,Person 520,9800000520,person520@example.com,Female,No,0,Not Graduate,No,3400,0,95,360,1,Rural,N
+LP002689,Person 521,9800000521,person521@example.com,Male,Yes,2,Not Graduate,No,2192,1742,45,360,1,Semiurban,Y
+LP002690,Person 522,9800000522,person522@example.com,Male,No,0,Graduate,No,2500,0,55,360,1,Semiurban,Y
+LP002692,Person 523,9800000523,person523@example.com,Male,Yes,3+,Graduate,Yes,5677,1424,100,360,1,Rural,Y
+LP002693,Person 524,9800000524,person524@example.com,Male,Yes,2,Graduate,Yes,7948,7166,480,360,1,Rural,Y
+LP002697,Person 525,9800000525,person525@example.com,Male,No,0,Graduate,No,4680,2087,,360,1,Semiurban,N
+LP002699,Person 526,9800000526,person526@example.com,Male,Yes,2,Graduate,Yes,17500,0,400,360,1,Rural,Y
+LP002705,Person 527,9800000527,person527@example.com,Male,Yes,0,Graduate,No,3775,0,110,360,1,Semiurban,Y
+LP002706,Person 528,9800000528,person528@example.com,Male,Yes,1,Not Graduate,No,5285,1430,161,360,0,Semiurban,Y
+LP002714,Person 529,9800000529,person529@example.com,Male,No,1,Not Graduate,No,2679,1302,94,360,1,Semiurban,Y
+LP002716,Person 530,9800000530,person530@example.com,Male,No,0,Not Graduate,No,6783,0,130,360,1,Semiurban,Y
+LP002717,Person 531,9800000531,person531@example.com,Male,Yes,0,Graduate,No,1025,5500,216,360,,Rural,Y
+LP002720,Person 532,9800000532,person532@example.com,Male,Yes,3+,Graduate,No,4281,0,100,360,1,Urban,Y
+LP002723,Person 533,9800000533,person533@example.com,Male,No,2,Graduate,No,3588,0,110,360,0,Rural,N
+LP002729,Person 534,9800000534,person534@example.com,Male,No,1,Graduate,No,11250,0,196,360,,Semiurban,N
+LP002731,Person 535,9800000535,person535@example.com,Female,No,0,Not Graduate,Yes,18165,0,125,360,1,Urban,Y
+LP002732,Person 536,9800000536,person536@example.com,Male,No,0,Not Graduate,,2550,2042,126,360,1,Rural,Y
+LP002734,Person 537,9800000537,person537@example.com,Male,Yes,0,Graduate,No,6133,3906,324,360,1,Urban,Y
+LP002738,Person 538,9800000538,person538@example.com,Male,No,2,Graduate,No,3617,0,107,360,1,Semiurban,Y
+LP002739,Person 539,9800000539,person539@example.com,Male,Yes,0,Not Graduate,No,2917,536,66,360,1,Rural,N
+LP002740,Person 540,9800000540,person540@example.com,Male,Yes,3+,Graduate,No,6417,0,157,180,1,Rural,Y
+LP002741,Person 541,9800000541,person541@example.com,Female,Yes,1,Graduate,No,4608,2845,140,180,1,Semiurban,Y
+LP002743,Person 542,9800000542,person542@example.com,Female,No,0,Graduate,No,2138,0,99,360,0,Semiurban,N
+LP002753,Person 543,9800000543,person543@example.com,Female,No,1,Graduate,,3652,0,95,360,1,Semiurban,Y
+LP002755,Person 544,9800000544,person544@example.com,Male,Yes,1,Not Graduate,No,2239,2524,128,360,1,Urban,Y
+LP002757,Person 545,9800000545,person545@example.com,Female,Yes,0,Not Graduate,No,3017,663,102,360,,Semiurban,Y
+LP002767,Person 546,9800000546,person546@example.com,Male,Yes,0,Graduate,No,2768,1950,155,360,1,Rural,Y
+LP002768,Person 547,9800000547,person547@example.com,Male,No,0,Not Graduate,No,3358,0,80,36,1,Semiurban,N
+LP002772,Person 548,9800000548,person548@example.com,Male,No,0,Graduate,No,2526,1783,145,360,1,Rural,Y
+LP002776,Person 549,9800000549,person549@example.com,Female,No,0,Graduate,No,5000,0,103,360,0,Semiurban,N
+LP002777,Person 550,9800000550,person550@example.com,Male,Yes,0,Graduate,No,2785,2016,110,360,1,Rural,Y
+LP002778,Person 551,9800000551,person551@example.com,Male,Yes,2,Graduate,Yes,6633,0,,360,0,Rural,N
+LP002784,Person 552,9800000552,person552@example.com,Male,Yes,1,Not Graduate,No,2492,2375,,360,1,Rural,Y
+LP002785,Person 553,9800000553,person553@example.com,Male,Yes,1,Graduate,No,3333,3250,158,360,1,Urban,Y
+LP002788,Person 554,9800000554,person554@example.com,Male,Yes,0,Not Graduate,No,2454,2333,181,360,0,Urban,N
+LP002789,Person 555,9800000555,person555@example.com,Male,Yes,0,Graduate,No,3593,4266,132,180,0,Rural,N
+LP002792,Person 556,9800000556,person556@example.com,Male,Yes,1,Graduate,No,5468,1032,26,360,1,Semiurban,Y
+LP002794,Person 557,9800000557,person557@example.com,Female,No,0,Graduate,No,2667,1625,84,360,,Urban,Y
+LP002795,Person 558,9800000558,person558@example.com,Male,Yes,3+,Graduate,Yes,10139,0,260,360,1,Semiurban,Y
+LP002798,Person 559,9800000559,person559@example.com,Male,Yes,0,Graduate,No,3887,2669,162,360,1,Semiurban,Y
+LP002804,Person 560,9800000560,person560@example.com,Female,Yes,0,Graduate,No,4180,2306,182,360,1,Semiurban,Y
+LP002807,Person 561,9800000561,person561@example.com,Male,Yes,2,Not Graduate,No,3675,242,108,360,1,Semiurban,Y
+LP002813,Person 562,9800000562,person562@example.com,Female,Yes,1,Graduate,Yes,19484,0,600,360,1,Semiurban,Y
+LP002820,Person 563,9800000563,person563@example.com,Male,Yes,0,Graduate,No,5923,2054,211,360,1,Rural,Y
+LP002821,Person 564,9800000564,person564@example.com,Male,No,0,Not Graduate,Yes,5800,0,132,360,1,Semiurban,Y
+LP002832,Person 565,9800000565,person565@example.com,Male,Yes,2,Graduate,No,8799,0,258,360,0,Urban,N
+LP002833,Person 566,9800000566,person566@example.com,Male,Yes,0,Not Graduate,No,4467,0,120,360,,Rural,Y
+LP002836,Person 567,9800000567,person567@example.com,Male,No,0,Graduate,No,3333,0,70,360,1,Urban,Y
+LP002837,Person 568,9800000568,person568@example.com,Male,Yes,3+,Graduate,No,3400,2500,123,360,0,Rural,N
+LP002840,Person 569,9800000569,person569@example.com,Female,No,0,Graduate,No,2378,0,9,360,1,Urban,N
+LP002841,Person 570,9800000570,person570@example.com,Male,Yes,0,Graduate,No,3166,2064,104,360,0,Urban,N
+LP002842,Person 571,9800000571,person571@example.com,Male,Yes,1,Graduate,No,3417,1750,186,360,1,Urban,Y
+LP002847,Person 572,9800000572,person572@example.com,Male,Yes,,Graduate,No,5116,1451,165,360,0,Urban,N
+LP002855,Person 573,9800000573,person573@example.com,Male,Yes,2,Graduate,No,16666,0,275,360,1,Urban,Y
+LP002862,Person 574,9800000574,person574@example.com,Male,Yes,2,Not Graduate,No,6125,1625,187,480,1,Semiurban,N
+LP002863,Person 575,9800000575,person575@example.com,Male,Yes,3+,Graduate,No,6406,0,150,360,1,Semiurban,N
+LP002868,Person 576,9800000576,person576@example.com,Male,Yes,2,Graduate,No,3159,461,108,84,1,Urban,Y
+LP002872,Person 577,9800000577,person577@example.com,,Yes,0,Graduate,No,3087,2210,136,360,0,Semiurban,N
+LP002874,Person 578,9800000578,person578@example.com,Male,No,0,Graduate,No,3229,2739,110,360,1,Urban,Y
+LP002877,Person 579,9800000579,person579@example.com,Male,Yes,1,Graduate,No,1782,2232,107,360,1,Rural,Y
+LP002888,Person 580,9800000580,person580@example.com,Male,No,0,Graduate,,3182,2917,161,360,1,Urban,Y
+LP002892,Person 581,9800000581,person581@example.com,Male,Yes,2,Graduate,No,6540,0,205,360,1,Semiurban,Y
+LP002893,Person 582,9800000582,person582@example.com,Male,No,0,Graduate,No,1836,33837,90,360,1,Urban,N
+LP002894,Person 583,9800000583,person583@example.com,Female,Yes,0,Graduate,No,3166,0,36,360,1,Semiurban,Y
+LP002898,Person 584,9800000584,person584@example.com,Male,Yes,1,Graduate,No,1880,0,61,360,,Rural,N
+LP002911,Person 585,9800000585,person585@example.com,Male,Yes,1,Graduate,No,2787,1917,146,360,0,Rural,N
+LP002912,Person 586,9800000586,person586@example.com,Male,Yes,1,Graduate,No,4283,3000,172,84,1,Rural,N
+LP002916,Person 587,9800000587,person587@example.com,Male,Yes,0,Graduate,No,2297,1522,104,360,1,Urban,Y
+LP002917,Person 588,9800000588,person588@example.com,Female,No,0,Not Graduate,No,2165,0,70,360,1,Semiurban,Y
+LP002925,Person 589,9800000589,person589@example.com,,No,0,Graduate,No,4750,0,94,360,1,Semiurban,Y
+LP002926,Person 590,9800000590,person590@example.com,Male,Yes,2,Graduate,Yes,2726,0,106,360,0,Semiurban,N
+LP002928,Person 591,9800000591,person591@example.com,Male,Yes,0,Graduate,No,3000,3416,56,180,1,Semiurban,Y
+LP002931,Person 592,9800000592,person592@example.com,Male,Yes,2,Graduate,Yes,6000,0,205,240,1,Semiurban,N
+LP002933,Person 593,9800000593,person593@example.com,,No,3+,Graduate,Yes,9357,0,292,360,1,Semiurban,Y
+LP002936,Person 594,9800000594,person594@example.com,Male,Yes,0,Graduate,No,3859,3300,142,180,1,Rural,Y
+LP002938,Person 595,9800000595,person595@example.com,Male,Yes,0,Graduate,Yes,16120,0,260,360,1,Urban,Y
+LP002940,Person 596,9800000596,person596@example.com,Male,No,0,Not Graduate,No,3833,0,110,360,1,Rural,Y
+LP002941,Person 597,9800000597,person597@example.com,Male,Yes,2,Not Graduate,Yes,6383,1000,187,360,1,Rural,N
+LP002943,Person 598,9800000598,person598@example.com,Male,No,,Graduate,No,2987,0,88,360,0,Semiurban,N
+LP002945,Person 599,9800000599,person599@example.com,Male,Yes,0,Graduate,Yes,9963,0,180,360,1,Rural,Y
+LP002948,Person 600,9800000600,person600@example.com,Male,Yes,2,Graduate,No,5780,0,192,360,1,Urban,Y
+LP002949,Person 601,9800000601,person601@example.com,Female,No,3+,Graduate,,416,41667,350,180,,Urban,N
+LP002950,Person 602,9800000602,person602@example.com,Male,Yes,0,Not Graduate,,2894,2792,155,360,1,Rural,Y
+LP002953,Person 603,9800000603,person603@example.com,Male,Yes,3+,Graduate,No,5703,0,128,360,1,Urban,Y
+LP002958,Person 604,9800000604,person604@example.com,Male,No,0,Graduate,No,3676,4301,172,360,1,Rural,Y
+LP002959,Person 605,9800000605,person605@example.com,Female,Yes,1,Graduate,No,12000,0,496,360,1,Semiurban,Y
+LP002960,Person 606,9800000606,person606@example.com,Male,Yes,0,Not Graduate,No,2400,3800,,180,1,Urban,N
+LP002961,Person 607,9800000607,person607@example.com,Male,Yes,1,Graduate,No,3400,2500,173,360,1,Semiurban,Y
+LP002964,Person 608,9800000608,person608@example.com,Male,Yes,2,Not Graduate,No,3987,1411,157,360,1,Rural,Y
+LP002974,Person 609,9800000609,person609@example.com,Male,Yes,0,Graduate,No,3232,1950,108,360,1,Rural,Y
+LP002978,Person 610,9800000610,person610@example.com,Female,No,0,Graduate,No,2900,0,71,360,1,Rural,Y
+LP002979,Person 611,9800000611,person611@example.com,Male,Yes,3+,Graduate,No,4106,0,40,180,1,Rural,Y
+LP002983,Person 612,9800000612,person612@example.com,Male,Yes,1,Graduate,No,8072,240,253,360,1,Urban,Y
+LP002984,Person 613,9800000613,person613@example.com,Male,Yes,2,Graduate,No,7583,0,187,360,1,Urban,Y
+LP002990,Person 614,9800000614,person614@example.com,Female,No,0,Graduate,Yes,4583,0,133,360,0,Semiurban,N

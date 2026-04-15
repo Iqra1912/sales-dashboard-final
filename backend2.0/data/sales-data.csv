@@ -1,0 +1,11 @@
+date,product,category,region,sales,profit
+2024-01-01,Laptop,Electronics,North,1200,300
+2024-01-02,Phone,Electronics,South,800,200
+2024-01-03,Shoes,Fashion,East,400,120
+2024-01-04,Watch,Accessories,West,600,150
+2024-02-01,Laptop,Electronics,North,1500,400
+2024-02-02,Phone,Electronics,South,900,250
+2024-02-03,Shoes,Fashion,East,500,140
+2024-02-04,Watch,Accessories,West,700,200
+2024-03-01,Laptop,Electronics,North,1700,450
+2024-03-02,Phone,Electronics,South,950,260
