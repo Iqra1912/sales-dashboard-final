@@ -17,16 +17,19 @@ app = create_app()
 UPLOAD_FOLDER = os.path.join(app.root_path, 'data', 'uploads')
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     with app.app_context():
         # This ensures tables exist before the app starts
         db.create_all()
         print("✅ Database tables verified/created.")
 
+    # Updated part - Use Render's PORT environment variable
+    port = int(os.environ.get("PORT", 8000))   # This is the important change
+
     app.run(
         debug=True,
-        host='127.0.0.1',
-        port=8000,
-        use_reloader=True,  # Set to True for auto-restart during dev
+        host='0.0.0.0',           # Changed from 127.0.0.1 → important for deployment
+        port=port,
+        use_reloader=True,
         threaded=True
     )

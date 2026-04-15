@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: shopeers-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python run.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: SECRET_KEY
+        value: shopeers-very-strong-secret-key-2026-keep-this-exactly-the-same-forever
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
