@@ -5,31 +5,30 @@ try:
     from app import create_app
     from app.extensions import db
 except ModuleNotFoundError as e:
-    print(f"Missing dependency: {e.name}")
-    print("Install with:  python -m pip install -r requirements.txt")
-    print("Or use venv:    .venv\\Scripts\\python run.py")
+    print(f"Error: Could not find modules. {e}")
     sys.exit(1)
 
-# Initialize the app using the factory
+# 1. Initialize the app using the factory
 app = create_app()
 
-# Ensure the upload directory exists
-UPLOAD_FOLDER = os.path.join(app.root_path, 'data', 'uploads')
-os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-
-if __name__ == "__main__":
-    with app.app_context():
-        # This ensures tables exist before the app starts
+# 2. Database & Folder Setup
+with app.app_context():
+    # Ensure the upload directory exists
+    UPLOAD_FOLDER = os.path.join(app.root_path, 'data', 'uploads')
+    os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+    
+    # Ensure tables exist before the app starts
+    try:
         db.create_all()
-        print("✅ Database tables verified/created.")
+    except Exception as e:
+        print(f"Database initialization failed: {e}") # Added code here
 
-    # Updated part - Use Render's PORT environment variable
-    port = int(os.environ.get("PORT", 8000))   # This is the important change
-
+# 3. Local Development Entry Point
+# Moved to the far left (no indentation)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
     app.run(
         debug=True,
-        host='0.0.0.0',           # Changed from 127.0.0.1 → important for deployment
-        port=port,
-        use_reloader=True,
-        threaded=True
+        host='0.0.0.0',
+        port=port
     )

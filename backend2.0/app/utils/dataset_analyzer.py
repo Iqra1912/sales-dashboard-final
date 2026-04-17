@@ -49,9 +49,16 @@ def analyze_dataset(df):
                 "values": [round(float(x), 2) for x in trend.values.tolist()]
             })
         except Exception as e:
-            print("Line chart error:", e)
-    elif revenue_col:
-        # fallback - show numeric trend by row index (sampled)
+            print(f"[analyzer] Date trend failed, using fallback: {e}")
+            if revenue_col:  # ✅ fallback moved INSIDE except block
+                sampled = df[revenue_col].dropna().iloc[::max(1, len(df)//20)]
+                charts.append({
+                    "type": "line",
+                    "title": f"{revenue_col} trend",
+                    "labels": [str(i) for i in range(len(sampled))],
+                    "values": [round(float(x), 2) for x in sampled.values.tolist()]
+                })
+    elif revenue_col:  # ✅ this elif is for the outer `if date_col and revenue_col`
         sampled = df[revenue_col].dropna().iloc[::max(1, len(df)//20)]
         charts.append({
             "type": "line",

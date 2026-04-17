@@ -12,7 +12,6 @@ function UploadDataset() {
 
     const res = await API.post("/upload", formData);
 
-    console.log(res.data);
   };
 
   return (

@@ -30,9 +30,11 @@ def create_app():
 
     # ✅ FIX: also allow /api/auth/* for CORS (covers Google OAuth callback too)
     CORS(app,
-         resources={r"/api/*": {"origins": "http://localhost:5173"}},
-         supports_credentials=True)
-
+     resources={r"/api/*": {"origins": [
+         "http://localhost:5173",
+         "https://shopeers.vercel.app"  # replace with your actual vercel URL
+     ]}},
+     supports_credentials=True)
     db.init_app(app)
     jwt.init_app(app)
     mail.init_app(app)
@@ -66,10 +68,10 @@ def create_app():
 
     with app.app_context():
         db.create_all()
-        print("✅ Database tables verified/created.")
 
     @app.route("/")
     def home():
         return redirect("http://localhost:5173")
+    
 
     return app

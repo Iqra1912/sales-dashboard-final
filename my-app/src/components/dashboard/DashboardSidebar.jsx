@@ -5,36 +5,21 @@ import {
   FiChevronLeft,
   FiChevronRight,
   FiHelpCircle,
-  FiLink,
-  FiMail,
   FiMessageCircle,
-  FiPackage,
   FiSettings,
-  FiShoppingCart,
-  FiUsers,
-  FiZap,
 } from "react-icons/fi";
 import { HiOutlineViewGrid } from "react-icons/hi";
 
+// ✅ Kept: Dashboard + Report & Analytics only
 const PRIMARY_NAV = [
   { id: "dashboard", label: "Dashboard", Icon: HiOutlineViewGrid },
-  { id: "products", label: "Product", Icon: FiPackage },
-  { id: "orders", label: "Order", Icon: FiShoppingCart },
-  { id: "customers", label: "Customer", Icon: FiUsers },
-  { id: "messages", label: "Message", Icon: FiMessageCircle },
   { id: "analytics", label: "Report & Analytics", Icon: FiBarChart2 },
 ];
 
-const SECONDARY_NAV = [
-  { id: "email", label: "Email", Icon: FiMail },
-  { id: "automation", label: "Automation", Icon: FiZap },
-  { id: "integration", label: "Integration", Icon: FiLink },
-];
-
+// ✅ Kept: Help Center + Feedback only (removed Settings from view)
 const FOOTER_NAV = [
-  { id: "help", label: "Help Center", Icon: FiHelpCircle },
-  { id: "feedback", label: "Feedback", Icon: FiMessageCircle },
-  { id: "settings", label: "Settings", Icon: FiSettings },
+  { id: "help",     label: "Help Center", Icon: FiHelpCircle },
+  { id: "feedback", label: "Feedback",    Icon: FiMessageCircle },
 ];
 
 function NavButton({ item, active, collapsed, onClick }) {
@@ -66,7 +51,6 @@ export default function DashboardSidebar({
   onEditProfile,
   onOpenSettings,
   onOpenFeedback,
-  onOpenEmail,
   onOpenHelp,
 }) {
   const [profileOpen, setProfileOpen] = useState(false);
@@ -83,15 +67,8 @@ export default function DashboardSidebar({
   }, []);
 
   const handleFooter = (id) => {
-    if (id === "help") onOpenHelp?.();
+    if (id === "help")     onOpenHelp?.();
     if (id === "feedback") onOpenFeedback?.();
-    if (id === "settings") onOpenSettings?.();
-  };
-
-  const handleSecondary = (id) => {
-    if (id === "email") onOpenEmail?.();
-    if (id === "automation") onNavigate("automation");
-    if (id === "integration") onNavigate("integration");
   };
 
   return (
@@ -100,6 +77,7 @@ export default function DashboardSidebar({
         collapsed ? "w-[76px]" : "w-[260px]"
       }`}
     >
+      {/* Logo */}
       <div className={`flex items-center gap-2 border-b border-[var(--app-border)] py-4 ${collapsed ? "justify-center px-2" : "px-5"}`}>
         <div className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-[var(--app-primary)] text-white shadow-sm">
           <span className="text-lg font-bold leading-none">◇</span>
@@ -111,7 +89,7 @@ export default function DashboardSidebar({
           type="button"
           onClick={onToggleCollapse}
           className={`ml-auto grid h-8 w-8 place-items-center rounded-lg border border-[var(--app-border)] text-[var(--app-subtle)] transition-colors hover:bg-black/5 ${collapsed ? "hidden" : ""}`}
-          aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
+          aria-label="Collapse sidebar"
         >
           <FiChevronLeft className="h-4 w-4" />
         </button>
@@ -129,6 +107,7 @@ export default function DashboardSidebar({
       )}
 
       <nav className="flex flex-1 flex-col gap-1 overflow-y-auto px-3 py-4">
+        {/* Primary nav — Dashboard + Analytics */}
         <div className="space-y-0.5">
           {PRIMARY_NAV.map((item) => (
             <NavButton
@@ -141,25 +120,7 @@ export default function DashboardSidebar({
           ))}
         </div>
 
-        <div className={`my-3 border-t border-[var(--app-border)] ${collapsed ? "mx-1" : ""}`} />
-
-        <div className="space-y-0.5">
-          {!collapsed && (
-            <p className="mb-1 px-3 text-[11px] font-semibold uppercase tracking-wider text-[var(--app-muted)]">
-              Workspace
-            </p>
-          )}
-          {SECONDARY_NAV.map((item) => (
-            <NavButton
-              key={item.id}
-              item={item}
-              collapsed={collapsed}
-              active={activeNav === item.id}
-              onClick={handleSecondary}
-            />
-          ))}
-        </div>
-
+        {/* Footer nav — Help + Feedback pushed to bottom */}
         <div className="mt-auto space-y-0.5 pt-4">
           {!collapsed && (
             <p className="mb-1 px-3 text-[11px] font-semibold uppercase tracking-wider text-[var(--app-muted)]">
@@ -183,6 +144,7 @@ export default function DashboardSidebar({
         </div>
       </nav>
 
+      {/* Profile */}
       <div ref={profileRef} className="relative border-t border-[var(--app-border)] p-3">
         <button
           type="button"
@@ -208,60 +170,25 @@ export default function DashboardSidebar({
         </button>
 
         {profileOpen && (
-          <div
-            className={`absolute bottom-full left-3 right-3 z-50 mb-2 overflow-hidden rounded-xl border border-[var(--app-border)] bg-[var(--app-surface)] py-1 shadow-lg ${
-              collapsed ? "left-2 right-auto w-48" : ""
-            }`}
-          >
-            <button
-              type="button"
-              className="w-full px-4 py-2.5 text-left text-sm hover:bg-black/5"
-              onClick={() => {
-                setProfileOpen(false);
-                onEditProfile();
-              }}
-            >
+          <div className={`absolute bottom-full left-3 right-3 z-50 mb-2 overflow-hidden rounded-xl border border-[var(--app-border)] bg-[var(--app-surface)] py-1 shadow-lg ${
+            collapsed ? "left-2 right-auto w-48" : ""
+          }`}>
+            <button type="button" className="w-full px-4 py-2.5 text-left text-sm hover:bg-black/5"
+              onClick={() => { setProfileOpen(false); onEditProfile(); }}>
               Edit profile
             </button>
-            <button
-              type="button"
-              className="w-full px-4 py-2.5 text-left text-sm hover:bg-black/5"
-              onClick={() => {
-                setProfileOpen(false);
-                onOpenEmail?.();
-              }}
-            >
-              Email
-            </button>
-            <button
-              type="button"
-              className="w-full px-4 py-2.5 text-left text-sm hover:bg-black/5"
-              onClick={() => {
-                setProfileOpen(false);
-                onOpenFeedback?.();
-              }}
-            >
+            <button type="button" className="w-full px-4 py-2.5 text-left text-sm hover:bg-black/5"
+              onClick={() => { setProfileOpen(false); onOpenFeedback?.(); }}>
               Send feedback
             </button>
-            <button
-              type="button"
-              className="w-full px-4 py-2.5 text-left text-sm hover:bg-black/5"
-              onClick={() => {
-                setProfileOpen(false);
-                onOpenSettings?.();
-              }}
-            >
+            <button type="button" className="w-full px-4 py-2.5 text-left text-sm hover:bg-black/5"
+              onClick={() => { setProfileOpen(false); onOpenSettings?.(); }}>
               Settings
             </button>
             <div className="my-1 border-t border-[var(--app-border)]" />
-            <button
-              type="button"
+            <button type="button"
               className="w-full px-4 py-2.5 text-left text-sm font-medium text-red-600 hover:bg-red-50"
-              onClick={() => {
-                setProfileOpen(false);
-                onLogout();
-              }}
-            >
+              onClick={() => { setProfileOpen(false); onLogout(); }}>
               Log out
             </button>
           </div>

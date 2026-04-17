@@ -108,7 +108,7 @@ def get_kpis():
                 "values": [float(x) for x in trend.values]
             })
         except Exception as e:
-            print("Line chart error:", e)
+            print(f"[dashboard] Date trend error: {e}")  # ← was empty, now has a body
 
     if len(numeric_cols) >= 2:
         charts.append({

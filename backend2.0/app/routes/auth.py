@@ -81,21 +81,15 @@ def register():
 @auth_bp.route('/google/login')
 def google_login():
     redirect_uri = url_for('auth.google_authorized', _external=True)
-    print(f"=== GOOGLE LOGIN STARTING, redirect_uri={redirect_uri} ===")
     return oauth.google.authorize_redirect(redirect_uri)
 
 @auth_bp.route('/google/authorized')
 def google_authorized():
-    print("=== GOOGLE CALLBACK STARTED ===")
     state_from_google = request.args.get("state")
     state_in_session = session.get("state")
-    print(f"Google sent state: '{state_from_google}'")
-    print(f"Session has state: '{state_in_session}'")
-    print(f"Session keys: {list(session.keys())}")
 
     try:
         token = oauth.google.authorize_access_token()
-        print("✅ TOKEN SUCCESS!")
 
         user_info = token.get("userinfo")
         if not user_info:
@@ -115,13 +109,9 @@ def google_authorized():
             identity=str(user.id),
             expires_delta=timedelta(hours=24)
         )
-        print(f"✅ LOGIN SUCCESS for {email}")
         return redirect(f"http://localhost:5173/auth/callback?token={access_token}")
 
     except Exception as e:
-        print("=== GOOGLE AUTH FAILED ===")
-        print(f"Error type: {type(e).__name__}")
-        print(f"Error message: {str(e)}")
         return redirect("http://localhost:5173/login?error=google")
 
 @auth_bp.route("/reset", methods=["POST"])

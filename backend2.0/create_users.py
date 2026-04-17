@@ -11,7 +11,6 @@ with app.app_context():
     # Check if user already exists
     existing = User.query.filter_by(email="admin@test.com").first()
     if existing:
-        print("User already exists! Use these credentials:")
     else:
         hashed = bcrypt.generate_password_hash("admin123").decode("utf-8")
         user = User(
@@ -22,7 +21,4 @@ with app.app_context():
         )
         db.session.add(user)
         db.session.commit()
-        print("✅ User created!")
 
-    print("Email:    admin@test.com")
-    print("Password: admin123")

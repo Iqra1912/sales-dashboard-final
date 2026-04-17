@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Sora:wght@300;400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Palette (from provided shades image):
+      #001D39, #0A4174, #49769F, #4E8EA2, #6EA2B3, #7BBDE8, #BDD8E9
+    */
+    --app-ink: #001d39;
+    --app-primary: #0a4174;
+    --app-primary-2: #49769f;
+    --app-accent: #4e8ea2;
+    --app-accent-2: #7bbde8;
+    --app-muted: rgba(0, 29, 57, 0.62);
+    --app-paper: #bdd8e9;
+
+    --app-bg: rgba(255, 255, 255, 0);
+    --app-fg: var(--app-ink);
+    --app-surface: rgba(255, 255, 255, 0.42);
+    --app-surface-strong: rgba(255, 255, 255, 0.6);
+    --app-subtle: rgba(0, 29, 57, 0.74);
+    --app-border: rgba(0, 29, 57, 0.14);
+    --app-border-2: rgba(123, 189, 232, 0.35);
+
+    --app-bg-gradient: radial-gradient(
+        900px 520px at 18% 8%,
+        rgba(123, 189, 232, 0.55) 0%,
+        rgba(110, 162, 179, 0.25) 40%,
+        rgba(255, 255, 255, 0) 72%
+      ),
+      radial-gradient(
+        780px 520px at 88% 18%,
+        rgba(78, 142, 162, 0.28) 0%,
+        rgba(10, 65, 116, 0.12) 45%,
+        rgba(255, 255, 255, 0) 72%
+      ),
+      linear-gradient(180deg, #eaf4fb 0%, #d3e8f5 42%, #bdd8e9 100%);
+
+    --background: var(--app-bg);
+    --foreground: var(--app-fg);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --app-bg: rgba(255, 255, 255, 0);
+      --app-fg: rgba(245, 251, 255, 0.92);
+      --app-surface: rgba(255, 255, 255, 0.06);
+      --app-surface-strong: rgba(255, 255, 255, 0.09);
+      --app-subtle: rgba(245, 251, 255, 0.72);
+      --app-muted: rgba(245, 251, 255, 0.6);
+      --app-border: rgba(189, 216, 233, 0.12);
+      --app-border-2: rgba(123, 189, 232, 0.22);
+      --app-bg-gradient: radial-gradient(
+          900px 520px at 18% 8%,
+          rgba(10, 65, 116, 0.48) 0%,
+          rgba(73, 118, 159, 0.22) 42%,
+          rgba(0, 29, 57, 0) 74%
+        ),
+        radial-gradient(
+          820px 540px at 90% 18%,
+          rgba(78, 142, 162, 0.25) 0%,
+          rgba(0, 29, 57, 0.1) 56%,
+          rgba(0, 29, 57, 0) 78%
+        ),
+        linear-gradient(180deg, #001d39 0%, #00172e 60%, #001226 100%);
+
+      --background: var(--app-bg);
+      --foreground: var(--app-fg);
+    }
+  }
+
+  body {
+    background: var(--app-bg-gradient);
+    background-attachment: fixed;
+    color: var(--foreground);
+    margin: 0;
+    font-family: "Sora", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 29, 57, 0.25);
+    border-radius: 999px;
+  }
+}
+
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .animate-hero-float {
+    animation: hero-float 6s ease-in-out infinite;
+  }
+  .animate-hero-fade-up {
+    animation: hero-fade-up 0.7s ease-out both;
+  }
+}

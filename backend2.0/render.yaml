@@ -2,14 +2,11 @@ services:
   - type: web
     name: shopeers-backend
     runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python run.py
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: gunicorn run:app
     envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
       - key: FLASK_ENV
         value: production
-      - key: SECRET_KEY
-        value: shopeers-very-strong-secret-key-2026-keep-this-exactly-the-same-forever
-      - key: GOOGLE_CLIENT_ID
-        sync: false
-      - key: GOOGLE_CLIENT_SECRET
-        sync: false
+      # ... keep your other keys (SECRET_KEY, etc.) below
