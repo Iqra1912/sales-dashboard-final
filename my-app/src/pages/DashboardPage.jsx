@@ -14,6 +14,7 @@ import DashboardSidebar from "../components/dashboard/DashboardSidebar";
 import MonthlyRevenueExpensesChart from "../components/dashboard/MonthlyRevenueExpensesChart";
 import RevenueChart from "../components/charts/RevenueChart";
 import TopProductsChart from "../components/charts/TopProductsChart";
+import DonutChart from "../components/charts/DonutChart";
 import { clearAuth, getAuthToken, getCurrentUser } from "../lib/auth";
 
 const PROFILE_KEY = "shopeers_user_profile";
@@ -43,12 +44,6 @@ const DEFAULT_KPIS = [
   { label: "Total Product Sold", value: "3,722",    delta: "+2.4%", up: true,  sub: "Than last week" },
   { label: "Total Sales",        value: "$217,027", delta: "-2.9%", up: false, sub: "Than last week" },
   { label: "Total Customers",    value: "7,273",    delta: "+2.1%", up: true,  sub: "Than last week" },
-];
-
-const PERFORMANCE = [
-  { id: "ps", label: "Product Sales",        target: "$367K", pct: 78, color: "bg-emerald-500" },
-  { id: "tk", label: "Team KPI",             target: "64%",   pct: 64, color: "bg-pink-400"   },
-  { id: "cs", label: "Customer Satisfaction",target: "89%",   pct: 89, color: "bg-blue-500"   },
 ];
 
 // ─── Month/Year filter helpers ───────────────────────────────────────────────
@@ -286,7 +281,29 @@ export default function DashboardPage() {
   const displayInsights = headerSearch.trim()
     ? insights.filter((i) => i.toLowerCase().includes(headerSearch.toLowerCase()))
     : insights;
-
+  const PERF_COLORS = ["bg-emerald-500", "bg-pink-400", "bg-blue-500"];
+  const performanceRows = kpis.length > 0
+  ? kpis.slice(0, 3).map((k, i) => {
+      // Parse numeric value from strings like "$4,551" or "57"
+      const raw = parseFloat(String(k.value).replace(/[^0-9.]/g, "")) || 0;
+      const allRaws = kpis.slice(0, 3).map(
+        (x) => parseFloat(String(x.value).replace(/[^0-9.]/g, "")) || 0
+      );
+      const max = Math.max(...allRaws) || 1;
+      const pct = Math.round((raw / max) * 100);
+      return {
+        id: `kpi-${i}`,
+        label: k.label,
+        target: k.value,
+        pct,
+        color: PERF_COLORS[i % PERF_COLORS.length],
+      };
+    })
+  : [
+      { id: "ps", label: "Product Sales",         target: "$367K", pct: 78, color: "bg-emerald-500" },
+      { id: "tk", label: "Team KPI",              target: "64%",   pct: 64, color: "bg-pink-400"   },
+      { id: "cs", label: "Customer Satisfaction", target: "89%",   pct: 89, color: "bg-blue-500"   },
+    ];
   const navigateTo = (id) => setActiveNav(id);
 
   // ── Export PDF ────────────────────────────────────────────────────────────────
@@ -439,7 +456,31 @@ export default function DashboardPage() {
                 }
               </button>
 
-             
+              {/* ── Notifications ── */}
+              <div className="relative">
+                <button
+                  type="button"
+                  onClick={() => setNotifOpen((v) => !v)}
+                  className="relative grid h-10 w-10 place-items-center rounded-xl border border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-subtle)] hover:bg-white/70"
+                  aria-label="Notifications"
+                >
+                  <FiBell className="h-[18px] w-[18px]" />
+                  <span className="absolute right-2 top-2 h-2 w-2 rounded-full bg-[var(--app-accent)] ring-2 ring-white" />
+                </button>
+                {notifOpen && (
+                  <div className="absolute right-0 z-50 mt-2 w-80 rounded-xl border border-[var(--app-border)] bg-[var(--app-surface)] py-2 shadow-xl">
+                    <p className="border-b border-[var(--app-border)] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[var(--app-muted)]">Notifications</p>
+                    <button type="button" className="w-full px-4 py-3 text-left text-sm hover:bg-black/5" onClick={() => setNotifOpen(false)}>
+                      <span className="font-medium">Upload parsed</span>
+                      <span className="mt-0.5 block text-xs text-[var(--app-subtle)]">Your dataset is ready for charts.</span>
+                    </button>
+                    <button type="button" className="w-full px-4 py-3 text-left text-sm hover:bg-black/5" onClick={() => setNotifOpen(false)}>
+                      <span className="font-medium">Weekly digest</span>
+                      <span className="mt-0.5 block text-xs text-[var(--app-subtle)]">Revenue up 3.2% vs last week.</span>
+                    </button>
+                  </div>
+                )}
+              </div>
 
               {/* ── Exports only (Imports removed) ── */}
               <div className="relative">
@@ -571,21 +612,13 @@ export default function DashboardPage() {
                 Choose file
               </button>
               <button
-  type="button"
-  onClick={handleUpload}
-  disabled={uploading}
-  className="inline-flex h-10 items-center gap-2 rounded-xl bg-[var(--app-primary)] px-5 text-sm font-semibold text-white hover:bg-[var(--app-primary-2)] disabled:opacity-50 disabled:cursor-not-allowed"
->
-  {uploading ? (
-    <>
-      <svg className="h-4 w-4 animate-spin" viewBox="0 0 24 24" fill="none">
-        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
-        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"/>
-      </svg>
-      Uploading…
-    </>
-  ) : "Upload"}
-</button>
+                type="button"
+                onClick={handleUpload}
+                disabled={uploading}
+                className="h-10 rounded-xl bg-[var(--app-primary)] px-5 text-sm font-semibold text-white hover:bg-[var(--app-primary-2)] disabled:opacity-50"
+              >
+                {uploading ? "Uploading…" : "Upload"}
+              </button>
             </div>
             {uploadMsg && (
               <p className={`mt-3 text-sm ${uploadMsg.startsWith("✓") ? "text-emerald-600" : "text-red-500"}`}>
@@ -644,32 +677,29 @@ export default function DashboardPage() {
           {/* ── Charts row (toggleable) ─────────────────────────────────────── */}
           <div id="analytics-section" className="mb-6 scroll-mt-24">
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-             {showCharts && (
-  charts.length > 0 ? (
-    <div className="mb-6 grid grid-cols-1 gap-6 lg:grid-cols-2">
-      {/* ...existing charts code... */}
-    </div>
-  ) : uploading ? (
-    // 👇 NEW: spinner while uploading
-    <div className="mb-6 flex items-center justify-center rounded-2xl border border-slate-100 bg-white p-10 shadow-sm">
-      <svg className="h-8 w-8 animate-spin text-[var(--app-primary)]" viewBox="0 0 24 24" fill="none">
-        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
-        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"/>
-      </svg>
-      <span className="ml-3 text-sm text-slate-500">Generating charts…</span>
-    </div>
-  ) : (
-    <div className="mb-6 rounded-2xl border border-dashed border-slate-200 bg-white p-10 text-center text-sm text-slate-500">
-      Upload a CSV or Excel file to generate live charts from your data.
-    </div>
-  )
-)}
+              {showCharts && (
+                <div className="rounded-2xl border border-slate-100 bg-white p-5 shadow-sm lg:col-span-2">
+                  <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
+                    <h2 className="text-base font-bold text-slate-900">Revenue and expenses</h2>
+                    <select
+                      value={chartPeriod}
+                      onChange={(e) => setChartPeriod(e.target.value)}
+                      className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm text-slate-700 outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-500/20"
+                    >
+                      <option>This Month</option>
+                      <option>This Quarter</option>
+                      <option>This Year</option>
+                    </select>
+                  </div>
+                  <MonthlyRevenueExpensesChart />
+                </div>
+              )}
 
               {showPerformance && (
                 <div className={`rounded-2xl border border-slate-100 bg-white p-5 shadow-sm ${showCharts ? "" : "lg:col-span-3"}`}>
                   <h2 className="mb-4 text-base font-bold text-slate-900">Performance</h2>
                   <div className="flex flex-col gap-5">
-                    {PERFORMANCE.map((row) => (
+                    {performanceRows.map((row) => (
                       <button
                         key={row.id}
                         type="button"
@@ -696,29 +726,41 @@ export default function DashboardPage() {
           </div>
 
           {/* ── Upload-driven charts (toggleable) ──────────────────────────── */}
-          {showCharts && (
-            charts.length > 0 ? (
-              <div className="mb-6 grid grid-cols-1 gap-6 lg:grid-cols-2">
-                <div className="rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
-                  <p className="mb-4 text-sm font-bold text-slate-900">
-                    {charts.find((c) => c.type === "bar")?.title || "Top categories"}
-                  </p>
-                  <TopProductsChart data={charts.find((c) => c.type === "bar")} />
-                </div>
-                <div className="rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
-                  <p className="mb-4 text-sm font-bold text-slate-900">
-                    {charts.find((c) => c.type === "line")?.title || "Revenue trend"}
-                  </p>
-                  <RevenueChart data={charts.find((c) => c.type === "line")} />
-                </div>
-              </div>
-            ) : (
-              <div className="mb-6 rounded-2xl border border-dashed border-slate-200 bg-white p-10 text-center text-sm text-slate-500">
-                Upload a CSV or Excel file to generate live charts from your data.
-              </div>
-            )
-          )}
+         {showCharts && (
+  charts.length > 0 ? (
+    <div className="mb-6 grid grid-cols-1 gap-6 lg:grid-cols-2">
+      {/* Bar chart */}
+      <div className="rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
+        <p className="mb-4 text-sm font-bold text-slate-900">
+          {charts.find((c) => c.type === "bar")?.title || "Top categories"}
+        </p>
+        <TopProductsChart data={charts.find((c) => c.type === "bar")} />
+      </div>
 
+      {/* Line chart */}
+      <div className="rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
+        <p className="mb-4 text-sm font-bold text-slate-900">
+          {charts.find((c) => c.type === "line")?.title || "Revenue trend"}
+        </p>
+        <RevenueChart data={charts.find((c) => c.type === "line")} />
+      </div>
+
+      {/* Donut chart — full width below */}
+      <div className="rounded-2xl border border-slate-100 bg-white p-5 shadow-sm lg:col-span-2">
+        <p className="mb-4 text-sm font-bold text-slate-900">
+          {charts.find((c) => c.type === "bar")?.title
+            ? `${charts.find((c) => c.type === "bar").title} breakdown`
+            : "Category breakdown"}
+        </p>
+        <DonutChart data={charts.find((c) => c.type === "bar")} />
+      </div>
+    </div>
+  ) : (
+    <div className="mb-6 rounded-2xl border border-dashed border-slate-200 bg-white p-10 text-center text-sm text-slate-500">
+      Upload a CSV or Excel file to generate live charts from your data.
+    </div>
+  )
+)}
           {/* ── Insights (toggleable, searchable) ─────────────────────────── */}
           {showInsights && displayInsights.length > 0 && (
             <div className="mb-6 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
@@ -733,7 +775,7 @@ export default function DashboardPage() {
               </ul>
             </div>
           )}
-
+          
         </main>
       </div>
 
@@ -750,6 +792,7 @@ export default function DashboardPage() {
         user={user}
         modalHelp={modalHelp}          setModalHelp={setModalHelp}
       />
+      
     </div>
   );
 }
