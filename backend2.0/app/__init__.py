@@ -2,7 +2,7 @@
 import os
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
-from flask import Flask, redirect
+from flask import Flask, app, redirect
 from flask_cors import CORS
 from flask_migrate import Migrate
 from .extensions import db, jwt, mail, oauth, bcrypt
@@ -28,11 +28,10 @@ def create_app():
     app.config.setdefault('SQLALCHEMY_DATABASE_URI', 'sqlite:///database.db')
     app.config.setdefault('SQLALCHEMY_TRACK_MODIFICATIONS', False)
 
-    # ✅ FIX: also allow /api/auth/* for CORS (covers Google OAuth callback too)
     CORS(app,
      resources={r"/api/*": {"origins": [
          "http://localhost:5173",
-         "https://shopeers.vercel.app"  # replace with your actual vercel URL
+         "https://sales-dashboard-final-three.vercel.app"  # 👈 updated
      ]}},
      supports_credentials=True)
     db.init_app(app)
@@ -71,7 +70,6 @@ def create_app():
 
     @app.route("/")
     def home():
-        return redirect("http://localhost:5173")
-    
+        return redirect("https://sales-dashboard-final-three.vercel.app")
 
     return app
