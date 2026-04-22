@@ -763,18 +763,34 @@ export default function DashboardPage() {
 )}
           {/* ── Insights (toggleable, searchable) ─────────────────────────── */}
           {showInsights && displayInsights.length > 0 && (
-            <div className="mb-6 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
-              <p className="mb-3 text-sm font-bold text-slate-900">
-                Insights
-                {headerSearch && <span className="ml-2 text-xs font-normal text-slate-400">— filtered by "{headerSearch}"</span>}
-              </p>
-              <ul className="flex flex-col gap-2">
-                {displayInsights.map((item, idx) => (
-                  <li key={idx} className="text-sm text-slate-600">{item}</li>
-                ))}
-              </ul>
-            </div>
-          )}
+  <div className="mb-6 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
+    <p className="mb-4 text-sm font-bold text-slate-900">
+      Insights
+      {headerSearch && <span className="ml-2 text-xs font-normal text-slate-400">— filtered by "{headerSearch}"</span>}
+    </p>
+    <div className="flex flex-wrap gap-2">
+      {displayInsights.map((item, idx) => {
+        const BADGE_STYLES = [
+          "bg-blue-50 text-blue-700 border border-blue-200",
+          "bg-emerald-50 text-emerald-700 border border-emerald-200",
+          "bg-violet-50 text-violet-700 border border-violet-200",
+          "bg-amber-50 text-amber-700 border border-amber-200",
+          "bg-pink-50 text-pink-700 border border-pink-200",
+          "bg-cyan-50 text-cyan-700 border border-cyan-200",
+        ];
+        return (
+          <span
+            key={idx}
+            className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium ${BADGE_STYLES[idx % BADGE_STYLES.length]}`}
+          >
+            <span className="h-1.5 w-1.5 rounded-full bg-current opacity-60" />
+            {item}
+          </span>
+        );
+      })}
+    </div>
+  </div>
+)}
           
         </main>
       </div>
