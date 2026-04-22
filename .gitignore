@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.env
+instance/
+__pycache__/
+*.pyc
+flask_session/
+uploads/
