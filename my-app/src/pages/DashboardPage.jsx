@@ -16,7 +16,7 @@ import RevenueChart from "../components/charts/RevenueChart";
 import TopProductsChart from "../components/charts/TopProductsChart";
 import DonutChart from "../components/charts/DonutChart";
 import { clearAuth, getAuthToken, getCurrentUser } from "../lib/auth";
-
+const API_URL = import.meta.env.VITE_API_URL || "";
 const PROFILE_KEY = "shopeers_user_profile";
 const SETTINGS_KEY = "shopeers_settings";
 const THEME_KEY = "shopeers_theme";
@@ -182,7 +182,7 @@ export default function DashboardPage() {
   useEffect(() => {
     if (!token) { navigate("/login"); return; }
     // ✅ FIXED: was /api/dashboard/dashboard (double path bug), now /api/dashboard
-    fetch("/api/dashboard", {
+    fetch(`${import.meta.env.VITE_API_URL}/api/dashboard`, {
       headers: { Authorization: `Bearer ${token}` },
     })
       .then((r) => r.json())
@@ -213,7 +213,7 @@ export default function DashboardPage() {
     const formData = new FormData();
     formData.append("file", file);
     try {
-      const res  = await fetch("/api/upload", {
+     const res = await fetch(`${import.meta.env.VITE_API_URL}/api/upload`, {
         method:  "POST",
         headers: { Authorization: `Bearer ${token}` },
         body:    formData,
